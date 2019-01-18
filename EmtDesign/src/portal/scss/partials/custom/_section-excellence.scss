@@ -1,0 +1,28 @@
+
+
+ .corner.corner-half-inverse.excellence{
+    &:after{
+        border-bottom-color:$backgroundColor; 
+    }
+}
+
+.section-excellence{
+    padding: rem(50px) 0 rem(75px) 0;
+    background: $backgroundColor ;
+    article{
+        img{
+            margin-bottom: rem(25px);
+        }
+        h3{
+            margin-top: rem(35px);
+        }
+        p{ 
+            color: #555;
+            font-size: rem(16px);
+            font-weight: 400;
+            @include if-ltr{
+                letter-spacing: 1px;
+            }
+        }
+    }
+} 

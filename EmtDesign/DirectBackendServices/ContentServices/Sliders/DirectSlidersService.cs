@@ -82,7 +82,7 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Sliders
         public async Task<IRequestProviderResult<SliderDto>> GetPublicByKeyAsync(string key)
         {
             var result = await _sliderService.GetPublicByKeyAsync(key);
-            return GetRequestProviderResult(result.MapToFrontendSliderDto());
+            return GetRequestProviderResult(result != null ? result.MapToFrontendSliderDto() : new SliderDto() );
         }
 
 

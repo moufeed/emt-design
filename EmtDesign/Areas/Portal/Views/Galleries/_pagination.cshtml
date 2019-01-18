@@ -1,7 +1,9 @@
 ﻿
 @model GalleryList
 
-
+ @{ 
+     var lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+ }
 <nav class="my-4">
     <ul class="pagination">
 
@@ -12,7 +14,9 @@
                 <li class="page-item ">
                     @{ int PreviousPage = Int32.Parse(Model.Pagination.PageNumber) - 1; }
 
-                    <a class="page-link" href="@Url.Action("index", "galleries", new { PageNumber = PreviousPage.ToString() })" tabindex="-1">@Localizer["Previous"]</a>
+                    <a class="page-link" href="@Url.Action("index", "galleries", new { PageNumber = PreviousPage.ToString() })" tabindex="-1">
+                        <i class="fa @(lang == "ar" ? "fa-chevron-right" :"fa-chevron-left") "></i>
+                    </a>
                 </li>
             }
 
@@ -30,7 +34,11 @@
                 <li class="page-item ">
                     @{ int NextPage = Int32.Parse(Model.Pagination.PageNumber) + 1; }
 
-                    <a class="page-link" href="@Url.Action("index", "galleries", new { PageNumber = NextPage.ToString() })" tabindex="-1">@Localizer["Next"]</a>
+                    <a class="page-link" href="@Url.Action("index", "galleries", new { PageNumber = NextPage.ToString() })" tabindex="-1">
+
+                         
+                        <i class="fa @(lang == "ar" ? "fa-chevron-left" :"fa-chevron-right") "></i>
+                    </a>
 
                 </li>
             }

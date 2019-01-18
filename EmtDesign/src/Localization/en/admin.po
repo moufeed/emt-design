@@ -465,9 +465,6 @@ msgstr "Detials"
 msgid "t_city"
 msgstr "Citt"
 
-msgid "T_POSITION"
-msgstr "Postion"
-
 #labels
 
 msgid "l_full_name"
@@ -941,10 +938,10 @@ msgstr "Static Page"
 
 msgid "service"
 msgstr "Service"
- 
+
 msgid "gallery"
 msgstr "Gallery"
-
+ 
 msgid "posts_section"
 msgstr "Posts Section"
 

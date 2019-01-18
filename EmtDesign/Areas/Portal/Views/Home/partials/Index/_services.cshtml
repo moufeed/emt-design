@@ -1,60 +1,68 @@
+@{ 
+    var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
+
+}
+
+
+<section class="s-pt-100 s-pt-lg-75 s-pb-lg-130 ds process-part  services-list s-parallax  overflow-visible" id="services">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 text-center mb-100">
+							  <h2 class="animate fast" data-animation="fadeInLeft" data-appear-top-offset="250">@Localizer["latest_services"]</h2>
+                             <p class="animate fast delay-2ms" data-animation="fastInDown" data-appear-top-offset="250">@Localizer["latest_services_slogan"]</p>
+							</div>
+						</div>
+						<div class="divider-75"></div>
+ <if include-if="(ViewBag.services != null && ViewBag.services.Count > 0)">
+						<div class="row no-gutters">
+								 
+                                  @{ int index = 0; }
+
+                @foreach (ServiceDto item in ViewBag.services)
+                {
+								<div class="col-12 col-md-6 col-lg-3">
+                                    <div class="service-item text-center">
+                                        @{
+                                            var animation = activeLang == "ar" ? (index % 2) != 0 ? "interInDownLeft" : "interInDownRight" : ((index % 2) == 0) ? "interInDownLeft" : "interInDownRight";
+                                        }
+
+                                        @if (item.IconVisibility)
+                                        {
+                                            <i class="@(item.Icon.StartsWith("fi")? "fi":"fa") @item.Icon  animate" data-animation="@animation" data-appear-top-offset="250"></i>
+                                        }
+                                        else if (!string.IsNullOrEmpty(item.MainImage))
+                                        {
+                                            <img src="@item.MainImage" alt="@item.Title" />
+                                        } 
+                                        else
+                                        {
+                                            <i class="fa fa-cubes"></i>
+                                        }
+
+                                         
+                                        <h3 class="service-title">
+                                            <strong class="animate" data-animation="fadeIn" data-appear-top-offset="250">@item.Title</strong>
+                                        </h3>
+                                        <p class="service-text animate" data-animation="fadeInUp" data-appear-top-offset="250"> @item.Summary@item.Title</p>
+                                    </div>
+								</div>
+								    
+                                        index++;
+                                   
+                }
+						</div>
+
+ </if>
+
+
+						<div class="divider-100 d-none d-md-block"></div>
+
+
+					</div>
+				</section>
+
+
+
+
+
  
-<section class="home_services">
-    <div class="container">
-         <header class="section-header text-center">
-                            <p>@Localizer["services_we_offer"]</p>
-                            <h2><strong>@Localizer["What_we_do"]</strong></h2>
-            </header>
-         <div class="row justify-content-center">
-
-             @if (ViewBag.services != null && ViewBag.services.Count > 0)
-             {
-
-                 foreach (ServiceDto item in ViewBag.services)
-                 {
-                     <div class="col-md-6 col-lg-3">
-                         <div class="services-box">
-                             @if (item.IconVisibility && !string.IsNullOrEmpty(item.Icon))
-                             {
-                                 <div class="icon">
-                                     <i class="fa @item.Icon"></i>
-                                 </div>
-                             }
-                             else if(!string.IsNullOrEmpty(item.MainImage) && !item.IconVisibility)
-                             {
-                                 <div class="image">
-                                     <span>
-                                         <figure>
-                                             <img src="@item.MainImage" alt="@item.Title" />
-                                         </figure>
-                                     </span>
-                                 </div>
-                             }
-                             else
-                             {
-                                 <div class="icon">
-                                     <i class="fa fa-cubes"></i>
-                                 </div>
-                             }
-
-                             <h4>@item.Title</h4>
-                             <p>
-                                 @Html.Raw(item.Summary)
-                             </p>
-                            
-                         </div>
-                     </div>
-                 }
-
-             }
-
-
-
-             
-         </div>
-
-        <div class="text-center mt-4"> 
-                <a   asp-controller="services" asp-action="index" class="btn btn-outline-success btn-more" >Read More</a>
-        </div>
-    </div>
-</section>

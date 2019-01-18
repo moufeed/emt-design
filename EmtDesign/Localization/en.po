@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: tamtech_cms 0.0.1.6"
+"Project-Id-Version: emt_desgin 0.1.7"
 "Last-Translator: tamtech solution <support@tamtech.solution>"
 "MIME-Version: 1.0"
 "Content-Type: text/plain; charset=UTF-8"
@@ -476,9 +476,6 @@ msgstr "Detials"
 msgid "t_city"
 msgstr "Citt"
 
-msgid "T_POSITION"
-msgstr "Postion"
-
 #labels
 
 msgid "l_full_name"
@@ -952,10 +949,10 @@ msgstr "Static Page"
 
 msgid "service"
 msgstr "Service"
- 
+
 msgid "gallery"
 msgstr "Gallery"
-
+ 
 msgid "posts_section"
 msgstr "Posts Section"
 
@@ -1558,182 +1555,317 @@ msgstr "More info"
 
 msgid "fullscreen"
 msgstr "Fullscreen"
-
-# adminbar
-msgid "Dashboard"
-msgstr "Dashboard"
-
-msgid "Log_Out"
-msgstr "Log Out"
-
-# tobbar
-msgid "mail_Us"
-msgstr "Mail Us"
-
+ 
 # bootombar
-msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
-msgstr "Copyright © 2018 tamtech solutions. All rights reserved."
+msgid "copyright_excellence_miles_All_rights_reserved"
+msgstr "Copyright © {0} Excellence Miles. All rights reserved."
 
 msgid "Powered_by"
 msgstr "Powered by"
 
 msgid "tamtech"
-msgstr "Tamtech"
+msgstr "tamtech"
 
-# index
-msgid "Welcome_Totamtech"
-msgstr "Welcome Totamtech"
+msgid "about_company"
+msgstr "About Company"
 
-msgid "Who_we_are"
-msgstr "Who we are?"
+msgid "latest_services"
+msgstr "Some Services"
 
-msgid "services_we_offer"
-msgstr "Services we offer"
+msgid "latest_services_slogan"
+msgstr "We deliver the best quality service for the realization of each client’s marketing needs."
 
-msgid "What_we_do"
-msgstr "What we do"
+msgid "Latest_work"
+msgstr "Some works"
 
-msgid "Why_Choose_Us"
-msgstr "Why Choose Us?"
+msgid "Latest_work_slogan"
+msgstr "We are honesty deal with everyone because we strongly believe that adhering to our promises is the key to success."
 
-msgid "What_Clients_say"
-msgstr "What Clients say?"
+msgid "Latest_Testimonials"
+msgstr "Testimonials"
 
-msgid "Our_Clients"
-msgstr "Our Clients"
+msgid "Latest_Testimonials_slogan"
+msgstr "Fabulously planned… Remembered always.."
 
-msgid "meet_our_clients"
-msgstr "Meet our clients"
+msgid "Lets_get_started"
+msgstr "Let's Get Started <br> Your Project"
 
-#about us
+msgid "Lets_get_started_slogan"
+msgstr "Because in your dreams, every detail matters."
 
-msgid "our_mission"
-msgstr "Our Mission"
+msgid "Lets_talk"
+msgstr "Let’s Talk!"
 
-msgid "happy_clients"
-msgstr "Happy Clients"
+msgid "latest_events"
+msgstr "Calendar"
 
-msgid "years_in_business"
-msgstr "Years in Business"
+msgid "latest_events_slogan"
+msgstr "An exceptional experience every time."
 
-msgid "cups_of_coffee"
-msgstr "Cups of Coffee"
+msgid "latest_projects"
+msgstr "Projects"
 
-msgid "no_projects"
-msgstr "No. of Projects"
+msgid "latest_projects_slogan"
+msgstr "An exceptional experience every time."
 
-msgid "our_values"
-msgstr "Our Value"
+msgid "prev_event"
+msgstr "<span>prev<br>Event</span>"
 
-msgid "our_vision"
-msgstr "Our Vision"
+msgid "next_event"
+msgstr "<span>next<br>Event</span>"
 
- 
-
-#: contact us
 msgid "contact_us"
-msgstr "Contact Us"
+msgstr "Contact us"
 
-msgid "Address"
-msgstr "Address"
+msgid "Write_Us"
+msgstr "Write Us"
 
-msgid "Phone"
-msgstr "Phone"
+msgid "call_us"
+msgstr "Call Us"
+ 
+msgid "visit_us"
+msgstr "Visit Us"
+ 
+msgid "p_full_name"
+msgstr "Full Name"
 
-msgid "Mobile"
-msgstr "Mobile"
+msgid "p_email_address"
+msgstr "Email address"
 
-msgid "Email"
-msgstr "Email"
+msgid "p_phone_number"
+msgstr "Phone number"
 
-msgid "Find_us"
-msgstr "Find us"
-
-msgid "Get_in_Touch"
-msgstr "Get in Touch"
-
-msgid "send_us_meesage"
-msgstr "Send us a meesage"
-
-msgid "name"
-msgstr "Name"
-
-msgid "Message"
+msgid "p_Message"
 msgstr "Message"
 
-msgid "Send_it"
-msgstr "Send it"
+msgid "p_send_message"
+msgstr "Send Message"
 
-msgid "close"
-msgstr "Close"
+msgid "dear_customer"
+msgstr "Dear  <strong class=\"customer_name\"></strong>, thanks for reaching out!"
+
+msgid "We_have_received_your_message"
+msgstr "We have received your message and would like to thank you for writing to us. If it's urgent, You can also use the mobile number listed below to talk to us."
 
 msgid "mobile_no"
 msgstr "Mobile No"
 
-msgid "dear_customer"
-msgstr  "Dear  <strong class=\"customer_name\"></strong>, thanks for reaching out!"
+msgid "have_great_day"
+msgstr "Have a great day!"
 
-msgid  "We_have_received_your_message"
-msgstr  "We have received your message and would like to thank you for writing to us. If it's urgent, You can also use the mobile number listed below to talk to us."
+msgid "our_works"
+msgstr "Our works"
 
-msgid  "have_great_day"
-msgstr  "Have a great day!"
+msgid "galleries_message"
+msgstr "A perfect blend of creativity, energy, communication, clarity and restraint"
 
+msgid "Know_More"
+msgstr "Know More"
 
-msgid "About_Us"
-msgstr "About Us"
+msgid "P_Video"
+msgstr "Video"
 
-msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
-msgstr "Call us today at <span>{0}</span> or Email us at <span>{1}</span>"
+msgid "p_photo"
+msgstr "Photo"
 
-msgid  "Start_Now"
-msgstr "Start Now"
+msgid "p_calendar"
+msgstr "Calendar"
 
-#:galleries
-msgid "our_galleries"
-msgstr "Our Galleries"
+msgid "events_message"
+msgstr "An exceptional experience every time."
 
-msgid "Galleries"
-msgstr "Galleries"
-
-msgid "Gallery"
-msgstr "Gallery"
-
-msgid "Services"
-msgstr "Services"
+msgid "share_this"
+msgstr "Share"
 
 msgid "our_services"
 msgstr "Our Services"
 
+msgid "About_Us"
+msgstr "About Us"
+
+msgid "companyHistory"
+msgstr "Company History"
+
+msgid "companyHistory_txt"
+msgstr "<p>Parent organization was founded in 1988 and after that check the success of the work and the multiplicity of activities emanated (Excellence Miles) to be more Specialized</p><p>The company aims at interior projects and services furnishing in accordance with the standards and levels of distinctive local and global perspective through the experience of its consultants.</p><p>Excellence miles has developed a new structure for events organization and conferences with the best human resources, technologies and services, based on its previous experience, in addition to research and development provided additional services, starting with design and implementation, engaged in the analysis and marketing of events and providing audio and visual services and catering.</p>"
+
+msgid "chairman_message"
+msgstr "Chairman’s Message"
+
+msgid "chairman_message_txt"
+msgstr "Peace and mercy from god and blessings  We have always worked to provide the best services to our customers and set us apart in our ability to develop and keep up with modernity in the urban renaissance taking place in the kingdom and expanding our business to cover all parts of the Kingdom. Was so thanks to God and the efforts of specialized technical staff you have, where you make all the necessary expansion and achieve success specialization in the field of civil works, interior decoration and furnishing. So I am pleased that you will be part of a group action independent entity specialized business listed under the name (Excellence Miles ) to specialize actual and good your performance throughout the past period to be (Excellence Miles) a new service to our customers keep pace with the evolution of their requirements and provide the best possible to achieve the desired to meet  the customer  need.  Honesty is the core of success so you must keep that to remain trustworthy that from our customers and intensive follow-up of customer orders and the accuracy of achievement make you always on the ladder of success.<br/>"
+
+msgid "Chairman"
+msgstr "Chairman"
+
+msgid "Chairman_name"
+msgstr "Abdullah Abdulaziz Alzeer"
+
+msgid "Mission"
+msgstr "Mission"
+
+msgid "Mission_txt"
+msgstr "Help our customers achieve their goals by providing a good solutions which meet their needs and desires."
+
+msgid "Vision"
+msgstr "Vision"
+
+msgid "Vision_txt"
+msgstr "To be the most successful company in  design and decoration at  the Middle East."
+
+msgid "Methodology"
+msgstr "Methodology"
+ 
+msgid "our_clients"
+msgstr "Our Clients"
+
+msgid "principles_values"
+msgstr "Principles and Values"
+
+msgid "customer_satisfaction"
+msgstr "Customer Satisfaction"
+
+msgid "customer_satisfaction_txt"
+msgstr "We know that customer satisfaction is the foundation of success and in order to get customer satisfaction we provide integrated solutions which achieve their goals and designs. In order to achieve that we rely on a group of designers, who have been selected very carefully, and engineers supervision as well as highly skilled technicians to achieve the best performance and times record."
+
+msgid "Honesty"
+msgstr "Honesty"
+
+msgid "honesty_txt"
+msgstr "We are honesty deal with everyone. Because we strongly believe that honesty is our key to success."
+
+msgid "Quality"
+msgstr "Quality"
+
+msgid "Quality_txt"
+msgstr "We follow the highest standards of quality to improve our performance so our customers and employees can achieve a double value."
+
+msgid "Elements_of_Excellence"
+msgstr "Elements of Excellence"
+
+msgid "Quality_of_work"
+msgstr "Quality of work"
+
+msgid "Quality_of_work_txt"
+msgstr "We have integrated and specialized departments  which made us pioneers in this area."
+
+msgid "Quickness_of_performance"
+msgstr "Quickness of performance"
+
+msgid "Quickness_of_performance_txt"
+msgstr "We appreciate the value of time, So working within a specific time schedule saves  our customers time and give them the opportunity to achieve more in less time."
+
+msgid "After_implementation_services"
+msgstr "After implementation services"
+
+msgid "After_implementation_services_txt"
+msgstr "Our work does not end with the delivery of the required work , but we provide support and assistance to our customers when they need us."
+msgid "Methodology"
+msgstr "Methodology"
+
+msgid "Listen"
+msgstr "Listen"
+
+msgid "Listen_txt"
+msgstr "Listening carefully to our customers to help them identify their needs."
+
+msgid "Analysis"
+msgstr "Analysis"
+
+msgid "Analysis_txt"
+msgstr "Doing extensive studies in order to understand  our customers’ needs and expectations."
+
+msgid "Advents"
+msgstr "Advents"
+
+msgid "Advents_txt"
+msgstr "We propose appropriate solutions to our customers  and try to make that solution meets the best international standards"
+
+msgid "Quality_of_Control"
+msgstr "Quality of Control"
+
+msgid "Quality_of_Control_txt"
+msgstr "All dealings with customers follow-up by a quality team to make sure if these deals meet the best standards."
+
 msgid "read_more"
-msgstr "Read More"
+msgstr "more ..."
 
-#: Products
-
-msgid "Products"
-msgstr "Products"
-
-msgid "Our_products"
-msgstr "Our Products"
-
-msgid "Previous"
-msgstr "Previous"
-
-msgid "Next"
-msgstr "Next"
-
-msgid "Description"
-msgstr "Description"
-
-msgid "By"
-msgstr "By"
-
-msgid "share_this_post"
-msgstr "Share this Post"
+msgid ""
+msgstr ""
 
 
-#request quote
+#seo 
+msgid "excellence_miles"
+msgstr "Excellence Miles"
+msgid "p_meta_description"
+msgstr "The company aims at interior projects and services furnishing in accordance with the standards and levels of distinctive local and global perspective through the experience of its consultants."
 
-msgid "request_quote"
-msgstr "Request Quote"
+msgid "c_address"
+msgstr "Riyadh,Saudi Arabia"
 
+msgid "telephone_number"
+msgstr "+966 11 281 7030"
+ 
+msgid "mobile_number"
+msgstr "+966 55 164 9005"
+
+msgid "fax_number"
+msgstr "+966 11 281 7050"
+
+msgid "info_email"
+msgstr "info@emt-events.com"
+
+msgid "latitude"
+msgstr "24.6780230"
+
+msgid "longitude"
+msgstr "46.6776423"
+
+msgid "postalCode"
+msgstr "34320"
+
+msgid "streetAddress"
+msgstr "Takhassusi St"
+
+msgid "addressLocality"
+msgstr "Al Mathar Ash Shamali"
+
+msgid "contactUsImage"
+msgstr "~/Portal/img/backgrounds/contact-us.jpg"
+
+msgid "GalleriesImage"
+msgstr "~/Portal/img/backgrounds/works.jpg"
+
+msgid "PostsImage"
+msgstr "~/portal/img/backgrounds/events.jpg"
+
+msgid "ServicesImage"
+msgstr "~/portal/img/backgrounds/services.jpg"
+
+msgid "AboutUsImage"
+msgstr "~/portal/img/backgrounds/about.jpg"
+
+msgid "PagesImage"
+msgstr "~/portal/img/backgrounds/pages.jpg"
+
+
+msgid "facebook_link"
+msgstr "https://www.facebook.com/Excellence-miles-Events-1174398756040626/"
+
+msgid "twitter_link"
+msgstr "https://twitter.com/amyal_career"
+
+msgid "instagram_link"
+msgstr "https://www.instagram.com/excellence_miles_events_/?hl=en"
+
+msgid "youtube_link"
+msgstr "https://www.youtube.com/channel/UCsCA7gJjzyj8uBlJsH3nVFw"
+
+msgid "linkedin_link"
+msgstr ""
+
+msgid "snapchat_link"
+msgstr "https://www.snapchat.com/add/excellence_miles_events_"
+
+msgid ""
+msgstr ""

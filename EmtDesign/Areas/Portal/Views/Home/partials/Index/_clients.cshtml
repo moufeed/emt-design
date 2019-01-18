@@ -1,33 +1,38 @@
+﻿@model TamTechSDK.Common.Services.ContentService.Sliders.Models.SliderDto
 
-<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 C 50 100 80 100 100 0 Z"></path></svg>
-@using TamTechSDK.Common.Services.ContentService.Sliders.Models;
-@if (ViewBag.publicClientsSlider != null)
-{
-    SliderDto clientsSlider = (SliderDto)ViewBag.publicClientsSlider;
-    if (clientsSlider.Items?.Count > 0)
-    {
-    <section class="home_clients_section">
+<if include-if="Model.Items != null && Model.Items.Count > 0">
+
+    <section class="home-clients-section">
         <div class="container">
-            <header class="section-header text-center">
-                <p>@Localizer["Our_Clients"]</p>
-                <h2><strong>@Localizer["meet_our_clients"]</strong></h2>
-            </header> 
             <div class="row">
-                <div class="col">
-                    <div class="owl-carousel clients_carousel">
-                        @foreach (var item in ViewBag.publicClientsSlider.Items)
+                <header class="col-12 text-center mb-5">
+                    <h3 class="__title animate fast" data-animation="fadeInLeft">
+                        <span> @Localizer["our_clients"]</span>
+                    </h3>
+                </header>
+                <div class="col-12 animate fast delay-5ms" data-animation="fadeIn">
+                    <div class="owl-carousel"
+                         data-responsive-lg="4"
+                         data-responsive-md="3"
+                         data-responsive-sm="2"
+                         data-responsive-xs="1"
+                         data-nav="false"
+                         data-dots="false"
+                         data-loop="true"
+                         data-margin="15"
+                         dir="ltr">
+                        @foreach (TamTechSDK.Common.Services.ContentService.Sliders.Models.SliderItemDto item in Model.Items)
                         {
-                            <div class="clients-img">
-                                <img src="@item.MainImage">
-                            </div>
+                            <article class="box text-center">
+                                <img src="@item.MainImage" alt="@item.Title" class="img-fluid" />
+                            </article>
                         }
 
                     </div>
                 </div>
             </div>
         </div>
+        <div class="corner corner-light"></div>
     </section>
-    }
-}
 
-
+</if>

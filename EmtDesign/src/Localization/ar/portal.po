@@ -1,174 +1,230 @@
-
-# adminbar
-msgid "Dashboard"
-msgstr "لوحة التحكم"
-
-msgid "Log_Out"
-msgstr "تسجيل الخروج"
-
-# tobbar
-msgid "mail_Us"
-msgstr "راسلنا"
-
+  
 # bootombar
-msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
-msgstr "جميع الحقوق محفوظة لصالح تام تك ©2018"
+msgid "copyright_excellence_miles_All_rights_reserved"
+msgstr "جميع الحقوق محفوظة لصالح شركة أميال التميز {0}"
 
 msgid "Powered_by"
-msgstr "تطوير"
+msgstr "تم التنفيذ بواسطة"
 
 msgid "tamtech"
-msgstr "تام تك"
+msgstr "تام تيك"
 
-# index
-msgid "Welcome_Totamtech"
-msgstr "مرحبا بك في تام تك"
+msgid "about_company"
+msgstr "حول الشركة"
 
-msgid "Who_we_are"
-msgstr "من نحن ؟"
+msgid "latest_services"
+msgstr "من خدماتنا"
 
-msgid "services_we_offer"
-msgstr "خدمات نقدّمها"
+msgid "latest_services_slogan"
+msgstr "نحن نقدم أفضل الخدمات من أجل تحقيق احتياجات التسويق لكل عميل."
 
-msgid "What_we_do"
-msgstr "عملنا"
+msgid "Latest_work"
+msgstr "من أعمالنا"
 
-msgid "Why_Choose_Us"
-msgstr "لماذا نحن ؟"
+msgid "Latest_work_slogan"
+msgstr "نحن نتعامل بصدق مع الجميع لأننا نؤمن بشدة بأن الالتزام بوعودنا هو مفتاح النجاح."
 
-msgid "What_Clients_say"
-msgstr "ماذا يقول العملاء ؟"
+msgid "Latest_Testimonials"
+msgstr "أراء العملاء"
 
-msgid "Our_Clients"
-msgstr "عملاؤنا"
+msgid "Latest_Testimonials_slogan"
+msgstr "تخطيط خرافي ... يذكر دائما."
 
-msgid "meet_our_clients"
-msgstr "اِلتقِ بعملائنا"
+msgid "Lets_get_started"
+msgstr "لنبدأ <br>  مشروعك الخاص"
 
-# about us
-msgid "our_mission"
-msgstr "مهمّتنا"
+msgid "Lets_get_started_slogan"
+msgstr "لأنه في أحلامك ، كل التفاصيل مهمة."
 
-msgid "happy_clients"
-msgstr "عملاء سعيدون"
-
-msgid "years_in_business"
-msgstr "في مجال الأعمال لسنوات"
-
-msgid "cups_of_coffee"
-msgstr "فناجين قهوة"
-
-msgid "no_projects"
-msgstr "عدد من المشاريع"
-
-msgid "our_values"
-msgstr "قيمنا"
-
-msgid "our_vision"
-msgstr "رؤيتنا"
-
-#: contact us
-msgid "contact_us"
+msgid "Lets_talk"
 msgstr "تواصل معنا"
 
-msgid "Address"
-msgstr "العنوان"
+msgid "latest_events"
+msgstr "التقويم"
 
-msgid "Phone"
-msgstr "الهاتف"
+msgid "latest_events_slogan"
+msgstr "تجربة استثنائية في كل مرة."
 
-msgid "Mobile"
-msgstr " الهاتف المحمول"
+msgid "prev_event"
+msgstr "<span>الحدث<br>السابق</span>"
 
-msgid "Email"
-msgstr "البريد الإلكترونيّ"
+msgid "next_event"
+msgstr "<span>الحدث<br>التالي</span>"
 
-msgid "Find_us"
-msgstr "جِدْنا"
+msgid "contact_us"
+msgstr "إتصل بنا"
 
-msgid "Get_in_Touch"
-msgstr "اِتّصل بنا"
+msgid "Write_Us"
+msgstr "راسلنا"
 
-msgid "send_us_meesage"
-msgstr "أرسل لنا رسالة"
+msgid "call_us"
+msgstr "اتصل بنا"
+ 
+msgid "visit_us"
+msgstr "لزيارتنا "
+ 
+msgid "p_full_name"
+msgstr "الأسم الكامل"
 
-msgid "name"
-msgstr "الاسم"
+msgid "p_email_address"
+msgstr "البريد الإلكتروني"
 
-msgid "Message"
-msgstr "الرّسالة"
+msgid "p_phone_number"
+msgstr "رقم الهاتف"
 
-msgid "Send_it"
-msgstr "أرسل"
+msgid "p_Message"
+msgstr "الرسالة"
 
-msgid "close"
-msgstr "أغلق"
-
-msgid "mobile_no"
-msgstr "رقم الهاتف المحمول"
+msgid "p_send_message"
+msgstr "إرسال الرسالة"
 
 msgid "dear_customer"
-msgstr  "عزيزي  <strong class=\"customer_name\"></strong>, شكراً لتواصلك معنا!"
+msgstr "عزيزي  <strong class=\"customer_name\"></strong>, شكراً لتواصلك معنا"
 
-msgid  "We_have_received_your_message"
-msgstr  "لقد استلمنا رسالتك و نودّ أن نشكرك لمراسلتنا. إذا كان الأمر مستعجلاً, يمكنك أيضاً استخدام رقم الهاتف المحمول أدناه للتّحدّث معنا."
+msgid "We_have_received_your_message"
+msgstr "لقد إستلمنا رسالتك  وسيتم التواصل معك. كما يمكن التواصل مباشرة معنا من خلال رقم الجوال المدون بالأسفل"
 
-msgid  "have_great_day"
-msgstr  "طاب يومك!"
+msgid "mobile_no"
+msgstr "رقم الجوال"
 
+msgid "have_great_day"
+msgstr "يوم سعيد"
 
-msgid "About_Us"
-msgstr "عنّا"
+msgid "our_works"
+msgstr "أعمالنا"
 
-msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
-msgstr "اِتّصل بنا اليوم على <span>{0}</span> أو أرسل لنا بريداً إلكترونيّاً على  <span>{1}</span>"
+msgid "galleries_message"
+msgstr "مزيج مثالي من الإبداع والطاقة والاتصالات والوضوح وضبط النفس"
 
-msgid  "Start_Now"
-msgstr "اِبدأ الآن"
+msgid "Know_More"
+msgstr "المزيد"
 
-#:galleries
-msgid "our_galleries"
-msgstr "معارضنا"
+msgid "P_Video"
+msgstr "الفيديو"
 
-msgid "Galleries"
-msgstr "معارض الصّور"
+msgid "p_photo"
+msgstr "صورة"
 
-msgid "Gallery"
-msgstr "معرض صور"
+msgid "p_calendar"
+msgstr "التقويم"
 
-msgid "Services"
-msgstr "خدمات"
+msgid "events_message"
+msgstr "تجربة استثنائية في كل مرة"
+
+msgid "share_this"
+msgstr "نشر"
 
 msgid "our_services"
 msgstr "خدماتنا"
 
+msgid "About_Us"
+msgstr "حول الشركة"
+
+msgid "companyHistory"
+msgstr "تاريخ الشركة"
+
+msgid "companyHistory_txt"
+msgstr "<p>تأسست الشركة الأم في عام 1988 وبعد أن تحقق نجاح العمل وتعددت الأنشطة انبثقت عنها (أميال التميز) لتكون أكثر تخصصا. تهدف الشركة إلى تقديم مشاريع داخلية وخدمات تأثيث وفقا لمعايير ومستويات المنظور المحلي والعالمي المتميز من خلال خبرة مستشاريها. طوّرت أميال الامتياز بنية جديدة لتنظيم المناسبات والمؤتمرات مع أفضل الموارد البشرية والتقنيات والخدمات ، بناءً على خبرتها السابقة ، بالإضافة إلى البحث والتطوير الذي يقدم خدمات إضافية ، بدءاً بالتصميم والتنفيذ ، والمشاركة في التحليل والتسويق للفعاليات وتوفير الخدمات الصوتية  والبصرية و الضيافة</p>"
+
+msgid "chairman_message"
+msgstr "كلمة رئيس مجلس الأدارة"
+
+msgid "chairman_message_txt"
+msgstr "السلام عليكم ورحمة الله وبركاته  <br/> لقد عملنا دوماً على تقديم أفضل الخدمات لعملائنا الكرام وتميزنا بقدرتنا على تطور ومواكبة الحداثة في النهضة العمرانية التي تشهدها المملكة وتوسعت أعمالنا لتغطي كافة أنحاء المملكة.<br/>ان بذلك بفضل الله ثم جهود الكادر الفني المتخصص لديكم حيث قدمتم كل ما يلزم للتوسع وتحقيق النجاح بتخصصكم في مجال الأعمال المدنية والديكور الداخلي والتأثيث.<br/>وعليه يسعدني ان تكونوا ضمن مجموعة العمل كيان مستقل متخصص بالأعمال المذكورة بمسمى (أميال التميز) وذلك لتميزكم الفعلي وحسن اداءكم طوال الفترة الماضية لتكون (أميال التميز) خدمة جديدة لعملائنا تواكب تطور متطلباتهم وتقدم أفضل ما يمكن لتحقيق المطلوب في تلبية حاجة العملاء.<br/>الصدق والأمانة عماد النجاح فيجب ان تحافظو عليهما لنبقى اهلاً للثقة التي عهدناها من عملائنا والمتابعة الحثيثة لطلبات العملاء والدقة في الإنجاز تجعلكم دوما على سلم النجاح.<br/>آملين أن نوفق وإياكم لما فيه خير العمل ونجاح"
+
+msgid "Chairman"
+msgstr "رئيس مجلس الإدارة"
+
+msgid "Chairman_name"
+msgstr "عبدالله بن عبدالعزيز الزير"
+
+msgid "Mission"
+msgstr "مهمتنا"
+
+msgid "Mission_txt"
+msgstr "مساعدة عملائنا لتحقيق اهدافهم بتقديم حلول هندسية تساهم في متطلباتهم ورغباتهم."
+
+msgid "Vision"
+msgstr "رؤيتنا"
+
+msgid "Vision_txt"
+msgstr "أن تكون أبرز المؤسسات نجاحاً في الشرق الأوسط في مجال عالم التصاميم الداخلية والديكور."
+ 
+msgid "our_clients"
+msgstr "عملاءنا"
+
+
+msgid "principles_values"
+msgstr "المبادئ والقيم"
+
+msgid "customer_satisfaction"
+msgstr "رضا العميل"
+
+msgid "customer_satisfaction_txt"
+msgstr "نعرف جيداً بأن رضا العميل هو اساس النجاح ولكي نحصل على رضا العميل نقوم بتقديم حلول متكاملة توافق احتياجاته وتدعمه في تحقيق اهدافه وإنشاء تصاميم ليصبح حقيقة واقعية نعتمد بذلك على مجموعة من المصممين الذي تم اختيارهم بعناية فائقة ومهندسي إشراف وفنيين بمهارات عالية والمتابعة الدقيقة لتحقيق أفضل أداء وبأوقات قياسية."
+
+msgid "Honesty"
+msgstr "الصدق والأمانة"
+
+msgid "honesty_txt"
+msgstr "نتعامل بصدق وأمانة مع الجميع ونؤمن بشدة بأن الصدق في التعامل هو مفتاح النجاح."
+
+msgid "Quality"
+msgstr "الجودة"
+
+msgid "Quality_txt"
+msgstr "نتبع أعلى معايير الجودة ونعمل من أجل التحسين المستمر للأداء في كل ما نقوم به وليتمكن عملاؤنا وموظفينا من تحقيق قيمة مضاعفة."
+
+msgid "Elements_of_Excellence"
+msgstr "عناصر التميز"
+
+msgid "Quality_of_work"
+msgstr "الجودة في العمل"
+
+msgid "Quality_of_work_txt"
+msgstr "امتلاكنا لإقسام متكاملة ومتخصصة في مجالنا جعلنا رواداً في هذا المجال"
+
+msgid "Quickness_of_performance"
+msgstr "سرعة الأداء"
+
+msgid "Quickness_of_performance_txt"
+msgstr "نقدر قيمة الوقت ونعمل ضمن خطط زمنية محددة نوفر وقت عملائنا ونمنحهم الفرصة لتحقيق المزيد في وقت أقل."
+
+msgid "After_implementation_services"
+msgstr "خدمات ما بعد التنفيذ"
+
+msgid "After_implementation_services_txt"
+msgstr "عملنا لا ينتهي بتقديم الخدمة أو التسليم العمل المطلوب بل نقوم بتقديم الدعم والمساندة لعملائنا متى احتاجوا إلينا."
+
+msgid "Methodology"
+msgstr "منهجية العمل"
+
+msgid "Listen"
+msgstr "اصغاء"
+
+msgid "Listen_txt"
+msgstr "نصغي بإهتمام لعملائنا لمساعدتهم في التعرف على احتياجتهم."
+
+msgid "Analysis"
+msgstr "تحليل"
+
+msgid "Analysis_txt"
+msgstr "نقوم بعمل دراسات مكثفة لفهم احتياجات عملائنا وتحقيق توقعاتهم."
+
+msgid "Advents"
+msgstr "حلول"
+
+msgid "Advents_txt"
+msgstr "نقترح الحلول المناسبة لإحتياجات عملائنا وفقاً لإفضل المعايير العالمية."
+
+msgid "Quality_of_Control"
+msgstr "مراقبة الجودة"
+
+msgid "Quality_of_Control_txt"
+msgstr "جميع التعاملات مع العملاء تخضع للتقيم من قبل فريق متابعة الجودة للتأكد من مطابقتها لإفضل المعايير."
+
 msgid "read_more"
-msgstr "اِقرأ أكثر"
+msgstr "المزيد ..."
 
-#: Products
-
-msgid "Products"
-msgstr "منتَجات"
-
-msgid "Our_products"
-msgstr "منتَجاتنا"
-
-msgid "Previous"
-msgstr "السّابق"
-
-msgid "Next"
-msgstr "التّالي"
-
-msgid "Description"
-msgstr "وصف"
-
-msgid "By"
-msgstr "بواسطة"
-
-msgid "share_this_post"
-msgstr "مشاركة "
-
-#request quote
-
-msgid "request_quote"
-msgstr "عرض سعر"
+msgid ""
+msgstr ""

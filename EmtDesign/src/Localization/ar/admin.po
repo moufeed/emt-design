@@ -466,9 +466,6 @@ msgstr "التفاصيل"
 msgid "t_city"
 msgstr "المدينة"
 
-msgid "T_POSITION"
-msgstr "الموقع"
-
 #labels
 
 msgid "l_full_name"

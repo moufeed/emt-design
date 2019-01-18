@@ -1,0 +1,40 @@
+.section-principles{
+    padding: rem(50px) 0;
+    text-align: center;
+    header{
+        margin-bottom: rem(30px);
+        h3{ 
+            color: darken($brown , 35%);
+            span{
+                display: inline-block;
+                position: relative;
+                &:before{
+                    @include  absolute(bottom $left ,13px -10px);
+                    @include size(calc(100% + 20px),1px);
+                    background: rgba($colorMain,.3);
+                    content: ''; 
+                }
+            }
+        }
+    }
+    article{
+        margin-top: rem(15px);
+        &.mt{
+            margin-top: rem(35px);
+        }
+        h5{
+            font-size: rem(25px);
+            margin-bottom: rem(15px); 
+            line-height : rem(35px);
+            
+        }
+        p{
+            color: #555;
+            font-size: rem(16px);
+            @include if-ltr{
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+}

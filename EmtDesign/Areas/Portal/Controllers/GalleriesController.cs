@@ -12,6 +12,7 @@ using TamTechSDK.Web;
 
 namespace EmtDesign.Areas.Portal.Controllers
 {
+    
     public class GalleriesController : GalleriesBaseController
     {
         public GalleriesController(ITelemetryClientService telemetryClientService,
@@ -21,4 +22,6 @@ namespace EmtDesign.Areas.Portal.Controllers
         }
 
     }
+
+     
 }

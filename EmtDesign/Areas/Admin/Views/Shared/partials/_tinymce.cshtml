@@ -1,7 +1,7 @@
 ﻿
 
 <script src="~/Admin/lib/tinymce/tinymce.min.js"></script>
-    
+
     @if (ViewBag.TinyMce_Contetnt_Id != null)
     {
     <script>
@@ -11,7 +11,7 @@
                     theme: 'modern',
                     height: 300,
                     images_upload_url: "@Url.AdminUrl("UploadImage", "Home")",
-   
+
                   images_upload_handler: function (blobInfo, success, failure) {
 
                       var xhr, formData;
@@ -25,7 +25,7 @@
                                 return;
                             }
                             json = JSON.parse(xhr.responseText);
-        
+
                             if (!json || typeof json.url != 'string') {
                                 failure('Invalid JSON: ' + xhr.responseText);
                                 return;
@@ -68,40 +68,44 @@
                     })},
                 });
 
-      
+
 
     </script>
-         
+
     }
 
 @if (ViewBag.TinyMce_Suumry_Id != null)
 {
     <script>
 
-         tinymce.init({
-            selector: '@ViewBag.TinyMce_Suumry_Id',
-                branding: false,
-                theme: 'modern',
-                min_height: 150,
-                statusbar: false,
-                 menubar: false,
-                 directionality:"@(DataCultureHelper.GetCurrent(Context.Request.Query) == "ar" ? "rtl" : "ltr")",
-             plugins: ['code hr anchor pagebreak spellchecker directionality'],
-                setup: function(editor) {
-                editor.on('change', function(e) {
-                    editor.save();
-                })}
-            });
+    tinymce.init({
+       selector: '@ViewBag.TinyMce_Suumry_Id',
+           branding: false,
+           theme: 'modern',
+           force_br_newlines: true,
+           force_p_newlines: false,
+           forced_root_block :false,
+           min_height: 150,
+           statusbar: false,
+            menubar: false,
+            directionality:"@(DataCultureHelper.GetCurrent(Context.Request.Query) == "ar" ? "rtl" : "ltr")",
+        plugins: ['code hr anchor pagebreak spellchecker directionality code'],
+        toolbar :['undo redo | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify  |   fontselect fontsizeselect  | outdent indent   | code  |  hr ltr rtl |blockquote     removeformat '],
+           setup: function(editor) {
+           editor.on('change', function(e) {
+               editor.save();
+           })}
+       });
 
     </script>
 }
- 
 
 
 
 
 
-<!-- 
+
+<!--
 style_formats: [{title: 'Example 1', inline: 'span', classes: 'example1'}],
 
  -->
