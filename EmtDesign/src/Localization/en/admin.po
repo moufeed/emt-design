@@ -465,6 +465,13 @@ msgstr "Detials"
 msgid "t_city"
 msgstr "Citt"
 
+msgid "T_POSITION"
+msgstr "Postion"
+
+
+msgid "t_section"
+msgstr "Section"
+
 #labels
 
 msgid "l_full_name"
@@ -938,15 +945,18 @@ msgstr "Static Page"
 
 msgid "service"
 msgstr "Service"
-
+ 
 msgid "gallery"
 msgstr "Gallery"
- 
+
 msgid "posts_section"
 msgstr "Posts Section"
 
 msgid "services_section"
 msgstr "Services Section"
+
+msgid "gallery_section"
+msgstr "Gallery Sections"
 
 msgid "add_to_menu"
 msgstr "Add to menu"
@@ -955,6 +965,8 @@ msgctxt "admin.Views.Menus.partials._modal"
 msgid "product"
 msgstr "Product"
 
+msgid "Create_section"
+msgctxt "Create Section"
 
 #:users Controller
 msgid "c_roles"
@@ -1114,6 +1126,11 @@ msgstr "Update Gallery Item"
 msgid "back_to_gallery"
 msgstr "Back to Gallery"
 
+msgid "create_video_item"
+msgstr "Create Video"
+
+msgid "edit_video_item"
+msgstr "Edit Video"
 
 #:FormGallery.cshtml 
 msgid "create_gallery"
@@ -1544,3 +1561,43 @@ msgstr "More info"
 
 msgid "fullscreen"
 msgstr "Fullscreen"
+
+msgid "Log_Out"
+msgstr "Log out"
+
+
+msgid "Slug_en"
+msgstr "Slug"
+
+msgid "Title_en"
+msgstr "Title"
+
+msgid "MainImage_en"
+msgstr "Main Image"
+
+msgid "VideoUrl_en"
+msgstr "Video Url"
+
+msgid "Content_en"
+msgstr "Content"
+
+msgid "Image_en"
+msgstr "Main Image"
+
+msgid "section_projects"
+msgstr "projects"
+
+msgid "section_works"
+msgstr "works"
+
+msgid "t_position"
+msgstr "Postion"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

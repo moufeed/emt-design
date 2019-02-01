@@ -233,5 +233,36 @@ msgstr "All dealings with customers follow-up by a quality team to make sure if 
 msgid "read_more"
 msgstr "more ..."
 
-msgid ""
-msgstr ""
+msgid "Visit_us"
+msgstr "Visit us"
+
+
+msgid "selected_projects"
+msgstr "Selected Projects"
+
+msgid "projects"
+msgstr "projects"
+
+msgid "works"
+msgstr "works"
+
+msgid "fields_Competence"
+msgstr "Our Fields of Competence"
+
+msgid "interior_designs"
+msgstr "Interior designs"
+
+msgid "interior_designs_text"
+msgstr "The design is a true innovation, which depends upon the efficiency of our designers to deal with the latest software which help them to get to the realism of the design. (Autocad - Photoshop - 3D Max - 3D Max animation)"
+
+msgid "decoration_manufacturing"
+msgstr "Decoration and manufacturing fiber glass"
+
+msgid "decoration_manufacturing_text"
+msgstr "Because the (Excellence Miles) have their own specialized departments which make us the best of all"
+
+msgid "business_furniture"
+msgstr "Business furniture, upholstery and curtains"
+
+msgid "business_furniture_text"
+msgstr "Furnishing is the finishing touch to add the aesthetic spirit of the work so we rely on sophisticated  technological factory and modern equipment as well as upholstery workshops"

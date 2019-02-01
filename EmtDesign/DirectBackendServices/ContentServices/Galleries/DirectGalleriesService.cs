@@ -30,6 +30,33 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Galleries
 
         #region puplic
 
+        public async Task<List<GalleryLiteDto>> GetPublicListAsync(int takeItems, string section = null, bool sortManually = false)
+        {
+            List<GalleryLiteDto> galleries = new List<GalleryLiteDto>();
+
+            var result = await _galleriesService.GetPublicListAsync(takeItems, section, sortManually);
+            if (result != null)
+            {
+                galleries = result.Select(m => m.ToFrontend_GalleryLiteDto()).ToList();
+            }
+            return galleries;
+        }
+
+        public async Task<PagedResultModel<List<GalleryLiteDto>>> GetPublicListAsync(PaginationModel pagination, string section = null, SortingModel sorting = null)
+        {
+            var result = await _galleriesService.GetPublicListAsync(pagination.MapToBackendPaginationModel(), section, sorting != null ? sorting.MapToBackendSortingModel() : null);
+
+            var galleries = new PagedResultModel<List<GalleryLiteDto>>() { };
+            if (result != null)
+            {
+                galleries.Data = result.Data != null ? result.Data.Select(m => m.ToFrontend_GalleryLiteDto()).ToList() : new List<GalleryLiteDto>();
+                galleries.Pagination = result.Pagination != null ? result.Pagination.MapToForntEndPagination() : new PaginationMetadataModel();
+
+            }
+            return galleries;
+        }
+
+
         public async Task<IRequestProviderResult<List<GalleryLiteDto>>> GetPublicListAsync(string lang)
         {
 
@@ -44,25 +71,25 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Galleries
 
 
 
-        public async Task<PagedResultModel<List<GalleryLiteDto>>> GetPublicListAsync(PaginationModel pagination, bool sortingByOrder = false)
-        {
-            SortingModel sorting = new SortingModel
-            {
-                SortBy = "DisplayOrder",
-                Descending = false
-            };
+        //public async Task<PagedResultModel<List<GalleryLiteDto>>> GetPublicListAsync(PaginationModel pagination, bool sortingByOrder = false)
+        //{
+        //    SortingModel sorting = new SortingModel
+        //    {
+        //        SortBy = "DisplayOrder",
+        //        Descending = false
+        //    };
 
-            var result = await _galleriesService.GetPublicListAsync(pagination.MapToBackendPaginationModel(), (sortingByOrder) ? sorting.MapToBackendSortingModel() : null);
+        //    var result = await _galleriesService.GetPublicListAsync(pagination.MapToBackendPaginationModel(), (sortingByOrder) ? sorting.MapToBackendSortingModel() : null);
 
-            var galleries = new PagedResultModel<List<GalleryLiteDto>>() { };
-            if (result != null)
-            {
-                galleries.Data = result.Data != null ? result.Data.Select(m => m.ToFrontend_GalleryLiteDto()).ToList() : new List<GalleryLiteDto>();
-                galleries.Pagination = result.Pagination != null ? result.Pagination.MapToForntEndPagination() : new PaginationMetadataModel();
+        //    var galleries = new PagedResultModel<List<GalleryLiteDto>>() { };
+        //    if (result != null)
+        //    {
+        //        galleries.Data = result.Data != null ? result.Data.Select(m => m.ToFrontend_GalleryLiteDto()).ToList() : new List<GalleryLiteDto>();
+        //        galleries.Pagination = result.Pagination != null ? result.Pagination.MapToForntEndPagination() : new PaginationMetadataModel();
 
-            }
-            return galleries;
-        }
+        //    }
+        //    return galleries;
+        //}
 
 
         public async Task<IRequestProviderResult<GalleryDto>> GetPublicBySlugAsync(string slug, string lang)
@@ -220,6 +247,9 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Galleries
             return MapRequestProviderResult(result);
 
         }
+
+        
+
 
 
 

@@ -61,9 +61,9 @@
     content: "\f111";
     font-size: 5px;
     position: relative;
-    margin-left: 0;
+    margin-#{$left}: 0;
     top: -3px;
-    right:if-ltr( -25px, 13px); 
+    #{$right}:-25px; 
   }
 
   .sf-menu li:hover > ul,
@@ -106,10 +106,10 @@
 
   //.nav is added to override .nav-narrow
   .sf-menu.nav > li:first-child > a {
-    margin-left: 0;
+    margin-#{$left}: 0;
   }
   .sf-menu.nav > li:last-child > a {
-    margin-right: 0;
+    margin-#{$right}: 0;
   }
 
   .sf-menu > li > a {
@@ -146,8 +146,8 @@
     .sf-menu > li > a {
       padding-top: 26px;
       padding-bottom: 26px;
-      margin-left: 29px;
-      margin-right: 29px;
+      margin-#{$left}: 29px;
+      margin-#{$right}: 29px;
     }
 
     .sf-menu > li.active > a {
@@ -169,7 +169,7 @@
       content: '';
       width: 1px;
       position: absolute;
-      left: -2px;
+      #{$right}: -2px;
       top: 0;
       bottom: 0;
       background-color: $colorBorderColor;

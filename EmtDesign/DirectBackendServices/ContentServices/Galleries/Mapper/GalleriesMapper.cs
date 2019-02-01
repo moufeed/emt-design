@@ -30,7 +30,8 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Galleries.Mapper
                 Locked = backend.Locked,
                 ItemsCount = backend.ItemsCount,
                 PublishedDate = backend.PublishedDate,
-                AuthorName = backend.AuthorName
+                AuthorName = backend.AuthorName,
+                Section =backend.Section
             };
         }
 

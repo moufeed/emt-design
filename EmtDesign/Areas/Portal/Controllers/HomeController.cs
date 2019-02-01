@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EmtDesign.Custom.Moduls;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Localization;
 using System;
@@ -34,6 +35,8 @@ namespace EmtDesign.Areas.Portal.Controllers
         private readonly IPostsService _postservice;
         private readonly IServicesService _servicesservice;
 
+        private readonly IStringLocalizer<HomeBaseController> _localizer;
+
         public HomeController(ITelemetryClientService telemetryClientService,
                                IPageService pageService,
                                IMenusServices menusServices,
@@ -45,8 +48,8 @@ namespace EmtDesign.Areas.Portal.Controllers
                                IRequestService requestService,
                                ICityService cityService,
                                IGalleriesService GalleriesService,
-                               IPostsService postservice
-                                
+                               IPostsService postservice,
+                               IStringLocalizer<HomeBaseController> localizer
                              )
                                : base(telemetryClientService, pageService,
                                         menusServices, configuration, emailSender, appSettingsService,
@@ -58,7 +61,7 @@ namespace EmtDesign.Areas.Portal.Controllers
             _GalleriesService = GalleriesService;
             _sliderService = sliderService;
             _postservice = postservice;
-            _servicesservice = servicesservice;
+            _localizer = localizer;
         }
 
         public override async Task<IActionResult> Index()
@@ -72,9 +75,11 @@ namespace EmtDesign.Areas.Portal.Controllers
                     ViewBag.publicMainSlider = publicMainSlider.Data;
                 }
 
-               ViewBag.Posts = await _postservice.GetPublicListAsync(4);
+                //ViewBag.Posts = await _postservice.GetPublicListAsync(4);
+                var lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
 
-                ViewBag.galleries = await _GalleriesService.GetPublicListAsync(4);
+                ViewBag.works = await _GalleriesService.GetPublicListAsync(12,(lang == "ar") ? _localizer[GallerySections.projects.ToString()] :  GallerySections.works.ToString());
+               //ViewBag.projects = await _GalleriesService.GetPublicListAsync(4, GallerySections.projects.ToString());
 
                 var aboutSummary = await _pageService.GetPublicPageSummaryByIdAsync(_appSettingsService.GetHomePageSummuryId());
 
@@ -83,12 +88,13 @@ namespace EmtDesign.Areas.Portal.Controllers
                     ViewBag.aboutSummary = aboutSummary.Data;
                 }
 
-                var services = await _servicesservice.GetPublicListAsync(4);
+                /*var services = await _servicesservice.GetPublicListAsync(40);
 
                 if (services.Success)
                 {
                     ViewBag.services = services.Data;
-                }
+                }*/
+
                 var publicClientsSlider = await _sliderService.GetPublicByKeyAsync(_appSettingsService.GetHomePageCarouselSliderKey());
                 if (publicClientsSlider.Success)
                 {

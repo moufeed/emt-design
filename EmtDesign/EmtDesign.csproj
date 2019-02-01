@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework> 
     <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
     <UserSecretsId>1a3c3056-0c25-46da-9dbb-18390a18c855</UserSecretsId>
+     <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
     <Version>0.0.0.6</Version>
   </PropertyGroup>
 
@@ -30,17 +31,23 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
     <PackageReference Include="OrchardCore.Localization.Core" Version="1.0.0-beta3-68792" /> 
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" /> 
-    <PackageReference Include="TamTechBackendSDK.ContentService.SQL" Version="0.0.3.5" /> 
+    <PackageReference Include="TamTechBackendSDK.ContentService.SQL" Version="0.0.3.6" /> 
     <PackageReference Include="TamTechBackendSDK.EmailService" Version="0.0.1.8" />
     <PackageReference Include="TamTechBackendSDK.FileStorageService" Version="0.0.0.7" />
     <PackageReference Include="TamTechBackendSDK.IdentityService" Version="0.0.1.2" />
     <PackageReference Include="TamTechBackendSDK.SMSService" Version="0.0.0.1" />
-    <PackageReference Include="TamTechSDK.Web" Version="0.0.2" />
+    <PackageReference Include="TamTechSDK.Web" Version="0.0.2.3" />
   </ItemGroup>
   
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="wwwroot\Shop\css\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="TamTechBackendSDK.IdentityService">
+      <HintPath>..\..\..\Tamtech\IdentityService\TamTechBackendSDK.IdentityService\bin\Debug\netcoreapp2.2\TamTechBackendSDK.IdentityService.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

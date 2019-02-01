@@ -18,7 +18,7 @@
   padding: 0;
 
   //display_table fix on affix
-  height: auto; 
+  height: auto;
 
   .boxed &,
   &.affix {
@@ -29,6 +29,11 @@
     //remove bottom border for affixed header with s-borderbottom class
     &:after {
       background-color: transparent;
+    }
+    .dn{
+     @include media-breakpoint-down(sm){
+      display: none;
+     }
     }
   }
   //hidding top border on affixed header
@@ -241,6 +246,3 @@
 // }
 
 
-@import 'header/header_includes';
-@import 'header/logo';
-@import 'header/search_modal';

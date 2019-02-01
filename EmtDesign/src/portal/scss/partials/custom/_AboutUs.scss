@@ -110,3 +110,28 @@
    padding: rem(75px) 0;
 background:rgba($colorMain ,.05) url('#{$img}about-bg.png') if-ltr(110%,-10%) 0%  no-repeat;
 }
+
+
+.section-fields{
+    padding: rem(75px) 0;
+    background:rgba($colorMain ,.03) ;
+    article{
+        text-align: center;
+        margin-top: 25px;
+        img{
+            margin-bottom: rem(25px);
+        }
+        h5{
+           font-size: rem(18px);
+           line-height: 30px; 
+        }
+        p{ 
+            color: #555;
+            font-size: rem(16px);
+            font-weight: 400; 
+            @include if-ltr{
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

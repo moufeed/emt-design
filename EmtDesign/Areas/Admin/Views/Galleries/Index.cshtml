@@ -38,7 +38,7 @@
                         <th width="100" class="text-center">@Localizer["t_image"]</th>
                         <th width="300">title</th>
                         <th>@Localizer["t_slug"]</th>
-                        <th>@Localizer["t_summary"]</th>
+                        <th>@Localizer["t_section"]</th>
                         <th width="125">@Localizer["t_total_items"]</th>
                         <th width="100" class="text-center">@Localizer["t_display_order"]</th>
                         <th width="100" class="text-center">@Localizer["t_visibility"]</th>
@@ -50,15 +50,17 @@
 
                                 <tr id="tr-@item.Id">
                                     <td class="text-center">
-                                        @if (!string.IsNullOrEmpty(item.MainImage))
-                                        {
+                                        <div class="tabel-img-circle">
+                                            @if (!string.IsNullOrEmpty(item.MainImage))
+                                            {
 
-                                            <img src="@item.MainImage" alt="" width="60" />
-                                        }
-                                        else
-                                        {
-                                            <img src="~/Admin/img/noimage.jpg" alt="" width="60" />
-                                        }
+                                                <img src="@item.MainImage" alt="" width="60" />
+                                            }
+                                            else
+                                            {
+                                                <img src="~/Admin/img/noimage.jpg" alt="" width="60" />
+                                            }
+                                        </div>
                                     </td>
                                     <td>
                                         @if (item.Published)
@@ -77,17 +79,7 @@
 
                                     <td>@item.Slug</td>
                                     <td>
-                                        <div class="s-summary">
-                                            @{
-                                                string text = String.Empty;
-                                                if (item.Summary != null)
-                                                {
-                                                    text = Regex.Replace(item.Summary, "<.*?>", String.Empty);
-                                                }
-
-                                            }
-                                            @Html.Raw(text)
-                                        </div>
+                                      @item.Section
                                     </td>
                                     <td class="text-center">@item.ItemsCount</td>
                                     <td class="text-center">@item.DisplayOrder</td>

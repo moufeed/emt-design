@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css");
+@import url("https://fonts.googleapis.com/css?family=Amiri");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+.color-main {
+    color: #be9840 !important;
+}
+
+.color-main2 {
+    color: #a56200 !important;
+}
+
+.color-main3 {
+    color: #00bea3 !important;
+}
+
+.color-main4 {
+    color: #f1894c !important;
+}
+
+.color-dark {
+    color: #252525;
+}
+
+.color-darkgrey {
+    color: #323232;
+}
+
+.color-success {
+    color: #4db19e
+}
+
+.color-info {
+    color: #007ebd
+}
+
+.color-light {
+    color: #fff
+}
+
+.color-warning {
+    color: #eeb269
+}
+
+.color-danger {
+    color: #dc5753
+}
+
+
+.bordered {
+    border: 1px solid #e1e1e1
+}
+.box-shadow {
+    border-color: transparent;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.bg-maincolor {
+    background-color: #be9840
+}
+
+.bg-maincolor2 {
+    background-color: #a56200
+}
+
+.bg-maincolor3 {
+    background-color: #00bea3
+}
+
+.bg-maincolor4 {
+    background-color: #f1894c
+}
+
+.bg-dark {
+    background-color: #252525
+}
+
+.bg-darkblue {
+    color: #fff;
+    background-color: #253138
+}
+
+.bg-darkgrey {
+    color: #fff;
+    background-color: #323232
+}
+
+.bg-success {
+    color: #fff;
+    background-color: #4db19e !important
+}
+
+.bg-info {
+    color: #fff;
+    background-color: #007ebd !important
+}
+
+.bg-warning {
+    background-color: #eeb269 !important
+}
+
+.bg-danger {
+    color: #fff;
+    background-color: #dc5753 !important
+}

@@ -4,7 +4,20 @@
     .sbg{
         background: darken(#fff,3%);
     }
+     
+
         > div{
+            &:last-child{
+                &.ds{
+                    background: darken(#fff,3%) ;
+                    h3{
+                        a{
+                            color: #323232;
+                        }
+                    }  
+                }
+            }
+
             $i :1;
             .s-icon i{  color: $colorMain;  }
             @each $color in $services-listColor{

@@ -163,8 +163,11 @@
 @import './partials/custom/pages';
 @import './partials/custom/section-principles';
 @import './partials/custom/section-excellence';
-@import './partials/custom/home_clients';
+@import './partials/custom/home_clients'; 
 @import './partials/custom/social_bar.scss';
+@import './partials/custom/home_contact_footer';
 
 //
- 
+@import './partials/header/header_includes';
+@import './partials/header/logo';
+//@import './partials/header/search_modal';

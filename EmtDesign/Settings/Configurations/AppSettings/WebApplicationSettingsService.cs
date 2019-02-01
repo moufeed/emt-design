@@ -156,6 +156,7 @@ namespace EmtDesign.Services.Configurations.AppSetting
                     "service",
                     "gallery",
                 "section_of_service",
+                "section_of_gallery",
             };
         }
 

@@ -226,5 +226,42 @@ msgstr "جميع التعاملات مع العملاء تخضع للتقيم م
 msgid "read_more"
 msgstr "المزيد ..."
 
+msgid "Visit_us"
+msgstr "قم بزيرتنا"
+
+msgid "latest_projects"
+msgstr "المشاريع"
+
+msgid "selected_projects"
+msgstr "مشاريع مختارة"
+
+msgid "projects"
+msgstr "مشاريع"
+
+msgid "works"
+msgstr "أعمال"
+
+
+msgid "fields_Competence"
+msgstr "مجالات أختصاصنا"
+
+msgid "interior_designs"
+msgstr "دراسات وتصاميم داخلية"
+
+msgid "interior_designs_text"
+msgstr "التصميم هو الإبداع الحقيقي الذي يعتمد عليه كفائة مصممينا بالتعامل مع أحدث البرامج لنصل الى الواقعية في التصميم. (Autocad – Photoshop – 3D Max – 3D Max animation)"
+
+msgid "decoration_manufacturing"
+msgstr "أعمال الديكور وتصنيع الفيبركلاس"
+
+msgid "decoration_manufacturing_text"
+msgstr "إن إمتلاك (أميال التميز) لإقسام متخصصة في تنفيذ أعمال الديكور ومصانع حديثة للأخشاب ما يجعلنا الأميز على الإطلاق."
+
+msgid "business_furniture"
+msgstr "أعمال التأثيث والتنجيد والستائر"
+
+msgid "business_furniture_text"
+msgstr " التأثيث هو اللمسة النهائية لإضافة الروح الجمالية للعمل نعتمد بذلك على مصنع متطور بتكنلوجيا ومعدات تصنيع حديثة و ورشات تنجيد متميزة."
+
 msgid ""
 msgstr ""

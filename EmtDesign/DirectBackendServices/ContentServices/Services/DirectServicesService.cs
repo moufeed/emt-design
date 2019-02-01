@@ -92,6 +92,12 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
         }
 
 
+        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListBySectionAsync(string section = "")
+        {
+            var services = await _servicesService.GetPublicListAsync(section);
+            List<ServiceDto> servicesDto = services?.Select(m => m.MapToFrontendDto()).ToList();
+            return GetRequestProviderResult(servicesDto);
+        }
 
 
         public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync(string slug = "")
@@ -185,6 +191,8 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
             var result = await _servicesService.PublishAsync(data.MapToBackend());
             return MapRequestProviderResult(result);
         }
+
+       
 
 
 

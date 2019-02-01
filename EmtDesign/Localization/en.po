@@ -476,6 +476,13 @@ msgstr "Detials"
 msgid "t_city"
 msgstr "Citt"
 
+msgid "T_POSITION"
+msgstr "Postion"
+
+
+msgid "t_section"
+msgstr "Section"
+
 #labels
 
 msgid "l_full_name"
@@ -949,15 +956,18 @@ msgstr "Static Page"
 
 msgid "service"
 msgstr "Service"
-
+ 
 msgid "gallery"
 msgstr "Gallery"
- 
+
 msgid "posts_section"
 msgstr "Posts Section"
 
 msgid "services_section"
 msgstr "Services Section"
+
+msgid "gallery_section"
+msgstr "Gallery Sections"
 
 msgid "add_to_menu"
 msgstr "Add to menu"
@@ -966,6 +976,8 @@ msgctxt "admin.Views.Menus.partials._modal"
 msgid "product"
 msgstr "Product"
 
+msgid "Create_section"
+msgctxt "Create Section"
 
 #:users Controller
 msgid "c_roles"
@@ -1125,6 +1137,11 @@ msgstr "Update Gallery Item"
 msgid "back_to_gallery"
 msgstr "Back to Gallery"
 
+msgid "create_video_item"
+msgstr "Create Video"
+
+msgid "edit_video_item"
+msgstr "Edit Video"
 
 #:FormGallery.cshtml 
 msgid "create_gallery"
@@ -1555,6 +1572,47 @@ msgstr "More info"
 
 msgid "fullscreen"
 msgstr "Fullscreen"
+
+msgid "Log_Out"
+msgstr "Log out"
+
+
+msgid "Slug_en"
+msgstr "Slug"
+
+msgid "Title_en"
+msgstr "Title"
+
+msgid "MainImage_en"
+msgstr "Main Image"
+
+msgid "VideoUrl_en"
+msgstr "Video Url"
+
+msgid "Content_en"
+msgstr "Content"
+
+msgid "Image_en"
+msgstr "Main Image"
+
+msgid "section_projects"
+msgstr "projects"
+
+msgid "section_works"
+msgstr "works"
+
+msgid "t_position"
+msgstr "Postion"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
  
 # bootombar
 msgid "copyright_excellence_miles_All_rights_reserved"
@@ -1790,8 +1848,39 @@ msgstr "All dealings with customers follow-up by a quality team to make sure if 
 msgid "read_more"
 msgstr "more ..."
 
-msgid ""
-msgstr ""
+msgid "Visit_us"
+msgstr "Visit us"
+
+
+msgid "selected_projects"
+msgstr "Selected Projects"
+
+msgid "projects"
+msgstr "projects"
+
+msgid "works"
+msgstr "works"
+
+msgid "fields_Competence"
+msgstr "Our Fields of Competence"
+
+msgid "interior_designs"
+msgstr "Interior designs"
+
+msgid "interior_designs_text"
+msgstr "The design is a true innovation, which depends upon the efficiency of our designers to deal with the latest software which help them to get to the realism of the design. (Autocad - Photoshop - 3D Max - 3D Max animation)"
+
+msgid "decoration_manufacturing"
+msgstr "Decoration and manufacturing fiber glass"
+
+msgid "decoration_manufacturing_text"
+msgstr "Because the (Excellence Miles) have their own specialized departments which make us the best of all"
+
+msgid "business_furniture"
+msgstr "Business furniture, upholstery and curtains"
+
+msgid "business_furniture_text"
+msgstr "Furnishing is the finishing touch to add the aesthetic spirit of the work so we rely on sophisticated  technological factory and modern equipment as well as upholstery workshops"
 
 
 #seo 
@@ -1799,6 +1888,9 @@ msgid "excellence_miles"
 msgstr "Excellence Miles"
 msgid "p_meta_description"
 msgstr "The company aims at interior projects and services furnishing in accordance with the standards and levels of distinctive local and global perspective through the experience of its consultants."
+
+msgid "fulladdress"
+msgstr "Takhassusi St, Al Mathar Ash Shamali Riyadh 12312 11575 Saudi Arabia"
 
 msgid "c_address"
 msgstr "Riyadh,Saudi Arabia"

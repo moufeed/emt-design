@@ -477,6 +477,12 @@ msgstr "التفاصيل"
 msgid "t_city"
 msgstr "المدينة"
 
+msgid "t_position"
+msgstr "الموقع"
+
+msgid "t_section"
+msgstr "التصنيف"
+
 #labels
 
 msgid "l_full_name"
@@ -954,12 +960,18 @@ msgstr "تصنبفات المقالات"
 msgid "services_section"
 msgstr "تصنيفات الخدمات"
 
+msgid "gallery_section"
+msgstr "تصنيفات معرض الصور"
+
 msgid "add_to_menu"
 msgstr "إضافة للقائمة"
 
 msgctxt "admin.Views.Menus.partials._modal"
 msgid "product"
 msgstr "منتَج"
+
+msgid "Create_section"
+msgctxt "تصنيف جديد"
 
 #:users Controller
 msgid "c_roles"
@@ -1118,6 +1130,12 @@ msgstr "تحديث صورة في المعرض"
 
 msgid "back_to_gallery"
 msgstr "العودة إلى معرض الصّور"
+
+msgid "create_video_item"
+msgstr "إضافة فيديو"
+
+msgid "edit_video_item"
+msgstr "تعديل الفيديو"
 
 #:FormGallery.cshtml 
 msgid "create_gallery"
@@ -1549,6 +1567,49 @@ msgstr "معرفة المزيد"
 
 msgid "fullscreen"
 msgstr "ملئ الشاشة"
+
+msgid "Log_Out"
+msgstr "تسجيل الخروج"
+
+
+msgid "Slug_ar"
+msgstr "الاسم اللطيف"
+
+msgid "Title_ar"
+msgstr "العنوان"
+
+msgid "MainImage_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "VideoUrl_ar"
+msgstr "رابط الفيديو"
+
+msgid "Content_ar"
+msgstr "محتوى"
+
+msgid "Image_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "section_projects"
+msgstr "مشاريع"
+
+msgid "section_works"
+msgstr "أعمال"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
   
 # bootombar
 msgid "copyright_excellence_miles_All_rights_reserved"
@@ -1777,18 +1838,58 @@ msgstr "جميع التعاملات مع العملاء تخضع للتقيم م
 msgid "read_more"
 msgstr "المزيد ..."
 
+msgid "Visit_us"
+msgstr "قم بزيرتنا"
+
+msgid "latest_projects"
+msgstr "المشاريع"
+
+msgid "selected_projects"
+msgstr "مشاريع مختارة"
+
+msgid "projects"
+msgstr "مشاريع"
+
+msgid "works"
+msgstr "أعمال"
+
+
+msgid "fields_Competence"
+msgstr "مجالات أختصاصنا"
+
+msgid "interior_designs"
+msgstr "دراسات وتصاميم داخلية"
+
+msgid "interior_designs_text"
+msgstr "التصميم هو الإبداع الحقيقي الذي يعتمد عليه كفائة مصممينا بالتعامل مع أحدث البرامج لنصل الى الواقعية في التصميم. (Autocad – Photoshop – 3D Max – 3D Max animation)"
+
+msgid "decoration_manufacturing"
+msgstr "أعمال الديكور وتصنيع الفيبركلاس"
+
+msgid "decoration_manufacturing_text"
+msgstr "إن إمتلاك (أميال التميز) لإقسام متخصصة في تنفيذ أعمال الديكور ومصانع حديثة للأخشاب ما يجعلنا الأميز على الإطلاق."
+
+msgid "business_furniture"
+msgstr "أعمال التأثيث والتنجيد والستائر"
+
+msgid "business_furniture_text"
+msgstr " التأثيث هو اللمسة النهائية لإضافة الروح الجمالية للعمل نعتمد بذلك على مصنع متطور بتكنلوجيا ومعدات تصنيع حديثة و ورشات تنجيد متميزة."
+
 msgid ""
 msgstr ""
  
 
 #seo 
 msgid "excellence_miles"
-msgstr "Excellence Miles"
+msgstr "أميال التميز"
 msgid "p_meta_description"
-msgstr "The company aims at interior projects and services furnishing in accordance with the standards and levels of distinctive local and global perspective through the experience of its consultants."
+msgstr "تهدف الشركة إلى تقديم مشاريع داخلية وخدمات تأثيث وفقا لمعايير ومستويات المنظور المحلي والعالمي المتميز من خلال خبرة مستشاريها."
+
+msgid "fulladdress"
+msgstr "شارع التخصصي، المعذر الشمالي، الرياض 12312 11575 المملكة العربية السعودية"
 
 msgid "c_address"
-msgstr "Riyadh,Saudi Arabia"
+msgstr "المملكة العربية السعودية . الرياض"
 
 msgid "telephone_number"
 msgstr "+966 11 281 7030"
@@ -1812,10 +1913,10 @@ msgid "postalCode"
 msgstr "34320"
 
 msgid "streetAddress"
-msgstr "Takhassusi St"
+msgstr "شارع التخصصي"
 
 msgid "addressLocality"
-msgstr "Al Mathar Ash Shamali"
+msgstr "حي المعذر الشمالي"
 
 msgid "contactUsImage"
 msgstr "~/Portal/img/backgrounds/contact-us.jpg"
@@ -1856,3 +1957,5 @@ msgstr "https://www.snapchat.com/add/excellence_miles_events_"
 
 msgid ""
 msgstr ""
+
+

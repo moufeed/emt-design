@@ -14,8 +14,12 @@
         </div>
         <div class="title_right">
 
-            <a href="@Url.AdminUrl("Create","Menus")"
-               class="btn btn-blue  btn-add-new ut-newMenu"><i class="fa fa-plus"></i>@Localizer["new_menu"]</a>
+            @if (Model.Count == 0)
+            {
+                <a href="@Url.AdminUrl("Create","Menus")"
+                   class="btn btn-blue  btn-add-new ut-newMenu"><i class="fa fa-plus"></i>@Localizer["new_menu"]</a>
+            }
+
         </div>
     </div>
 </div>
@@ -42,7 +46,7 @@
                             <tr>
                                 <th>@Localizer["t_name"]</th>
                                 <th>@Localizer["t_title"]</th>
-                                <th>@Localizer["t_position"]</th>
+                                <th>@Localizer["T_POSITION"]</th>
                                 <th width="200">@Localizer["t_create_date"]</th>
                                 <th width="200">@Localizer["t_modified_date"]</th>
                                 <th width="150">@Localizer["t_actions"]</th>
@@ -80,7 +84,7 @@
 
                                             <if include-if="menu.Locked">
                                                 <span data-toggle="tooltip"
-                                                     data-placement="@(activeLang == "ar" ? "right" : "left")"
+                                                      data-placement="@(activeLang == "ar" ? "right" : "left")"
                                                       class="btn-locked btn-round"
                                                       title="@Localizer["locked_by_system"]"><i class="fa fa-lock"></i></span>
                                             </if>

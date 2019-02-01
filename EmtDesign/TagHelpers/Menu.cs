@@ -32,6 +32,7 @@ namespace EmtDesign.TagHelpers
                       { MenuItemTypeEnum.section.ToString()  , $"/{culture}/portal/posts/s" },
                       { MenuItemTypeEnum.gallery.ToString()  , $"/{culture}/portal/galleries/v" },
                       { MenuItemTypeEnum.section_of_service.ToString()  , $"/{culture}/portal/services/s" },
+                      { MenuItemTypeEnum.section_of_gallery.ToString()  , $"/{culture}/portal/galleries/s" },
                    };
         }
 
@@ -132,7 +133,16 @@ namespace EmtDesign.TagHelpers
                 return GenerateLiItem(Menu, (string)paths[MenuItemTypeEnum.section_of_service.ToString()]);
             }
             #endregion
-             
+
+
+            #region galleries  section
+            if (Menu.ItemType.Equals(MenuItemTypeEnum.section_of_gallery.ToString(), StringComparison.OrdinalIgnoreCase))
+            {
+                return GenerateLiItem(Menu, (string)paths[MenuItemTypeEnum.section_of_gallery.ToString()]);
+            }
+            #endregion
+
+
             #region Url
             if (Menu.ItemType.Equals(MenuItemTypeEnum.url.ToString(), StringComparison.OrdinalIgnoreCase))
             {

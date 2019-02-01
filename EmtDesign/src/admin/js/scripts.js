@@ -17,8 +17,7 @@ defaultLocalization ={
     "published_successfully" : "published successfully",
     "unpublished_successfully" : "unpublished successfully",
     "publish" : "Publish",
-    "unpublish" :"unpublish",
-    "save" :"save"
+    "unpublish" :"unpublish"
 }
    window.localization = $.extend({}, defaultLocalization ,window.customLocalization || {});
  

@@ -254,7 +254,7 @@ const toggleEdit_menuitem = ($this)=>{
     tmpVal = $input.val();
     $input.removeAttr("disabled");
     $order.removeAttr("disabled");
-    $this.removeClass('btn-edit').addClass('btn-save editable').attr('data-original-title',window.localization.save);
+    $this.removeClass('btn-edit').addClass('btn-save editable').attr('data-original-title',"save");
     $this.find(".fa").removeClass().addClass('fa fa-floppy-o');
     $tr.find(".btn-remove").addClass("hidden");
     $tr.find(".btn-cancel").removeClass("hidden");

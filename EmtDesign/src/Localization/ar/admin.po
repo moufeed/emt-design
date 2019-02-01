@@ -466,6 +466,12 @@ msgstr "التفاصيل"
 msgid "t_city"
 msgstr "المدينة"
 
+msgid "t_position"
+msgstr "الموقع"
+
+msgid "t_section"
+msgstr "التصنيف"
+
 #labels
 
 msgid "l_full_name"
@@ -943,12 +949,18 @@ msgstr "تصنبفات المقالات"
 msgid "services_section"
 msgstr "تصنيفات الخدمات"
 
+msgid "gallery_section"
+msgstr "تصنيفات معرض الصور"
+
 msgid "add_to_menu"
 msgstr "إضافة للقائمة"
 
 msgctxt "admin.Views.Menus.partials._modal"
 msgid "product"
 msgstr "منتَج"
+
+msgid "Create_section"
+msgctxt "تصنيف جديد"
 
 #:users Controller
 msgid "c_roles"
@@ -1107,6 +1119,12 @@ msgstr "تحديث صورة في المعرض"
 
 msgid "back_to_gallery"
 msgstr "العودة إلى معرض الصّور"
+
+msgid "create_video_item"
+msgstr "إضافة فيديو"
+
+msgid "edit_video_item"
+msgstr "تعديل الفيديو"
 
 #:FormGallery.cshtml 
 msgid "create_gallery"
@@ -1538,3 +1556,46 @@ msgstr "معرفة المزيد"
 
 msgid "fullscreen"
 msgstr "ملئ الشاشة"
+
+msgid "Log_Out"
+msgstr "تسجيل الخروج"
+
+
+msgid "Slug_ar"
+msgstr "الاسم اللطيف"
+
+msgid "Title_ar"
+msgstr "العنوان"
+
+msgid "MainImage_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "VideoUrl_ar"
+msgstr "رابط الفيديو"
+
+msgid "Content_ar"
+msgstr "محتوى"
+
+msgid "Image_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "section_projects"
+msgstr "مشاريع"
+
+msgid "section_works"
+msgstr "أعمال"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

@@ -15,12 +15,16 @@
                 transform-origin: center;
     
             }
-
-        
         }
         @include media-breakpoint-up(md){
             img{
                 width: 75px;
+            }
+        }
+
+        @include media-breakpoint-down(sm){
+            img{
+                width: 125px;
             }
         }
         position: relative;

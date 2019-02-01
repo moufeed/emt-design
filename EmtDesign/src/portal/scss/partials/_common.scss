@@ -332,9 +332,7 @@ pre {
 ._3lines{
   @include ellipse(16px , 1.6 ,3);
 }
-.mb100{
-  margin-bottom: 100px;
-}
+ 
 
 
 .__dots{
@@ -355,5 +353,11 @@ pre {
           background: rgba($colorMain,.3);
           content: ''; 
       }
+  }
+}
+.mb100{
+  margin-bottom: 100px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
   }
 }

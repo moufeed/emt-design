@@ -32,9 +32,7 @@
 
 
         <div class="x_panel p-x-0">
-
-
-
+             
             <div class="x_content">
                 <partial name="_Filters.cshtml" model="ViewBag.FilterModel" />
                 <div class="table-responsive">
@@ -54,15 +52,19 @@
 
                                 <tr id="tr-@item.Id">
                                     <td class="text-center">
-                                        @if (!string.IsNullOrEmpty(item.MainImage))
-                                        {
 
-                                            <img src="@item.MainImage" alt="" width="60" />
-                                        }
-                                        else
-                                        {
-                                            <img src="~/Admin/img/noimage.jpg" alt="" width="75" />
-                                        }
+                                        <div class="tabel-img-circle">
+                                            @if (!string.IsNullOrEmpty(item.MainImage))
+                                            {
+
+                                                <img src="@item.MainImage" alt="" width="60" />
+                                            }
+                                            else
+                                            {
+                                                <img src="~/Admin/img/noimage.jpg" alt="" width="75" />
+                                            }
+                                        </div>
+                                        
                                     </td>
                                     <td style="min-width:150px">
                                         @if (item.Published)

@@ -762,7 +762,12 @@ a.btn {
   span {
     color: $colorMain;
   }
+  @include media-breakpoint-down(sm){
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
+
 
 .main-testimonials {
   @media (min-width: 1600px) {
@@ -2249,7 +2254,7 @@ h4.margin {
 }
 
 .about-home {
-  background :url('#{$img}about-bg.png') 120% -180%  no-repeat;
+  background :url('#{$img}about-bg.png') 120% -60%  no-repeat;
   @include media-breakpoint-up(sm){
     margin-bottom: -40px;
   }
@@ -2961,7 +2966,11 @@ h4.margin {
   }
   .owl-nav.disabled {
     display: block;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
   }
+
   .top-right-nav .owl-nav {
     top: 46%;
     @media (max-width: 991px) {

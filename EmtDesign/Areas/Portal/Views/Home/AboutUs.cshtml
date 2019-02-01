@@ -23,7 +23,7 @@
             <div class="col-12">
                 <h3 class="animate fast __title " data-animation="bounceInLeft"><span>@Localizer["chairman_message"]</span></h3>
                 <div class="d-none d-md-block divider-50"></div>
-                <p class="mb-3 animate fast msg" data-animation="fadeInUp"> @Localizer["chairman_message_txt"]</p>
+                <p class="mb-3 animate fast msg text-center" data-animation="fadeInUp"> @Localizer["chairman_message_txt"]</p>
                 <footer class="animate fast" data-animation="fadeInUp">
                     <strong>@Localizer["Chairman_name"]</strong>
                     <small>@Localizer["Chairman"]</small>
@@ -38,7 +38,7 @@
     <div class="divider-35"></div>
     <div class="container">
         <div class="row justify-content-around text-center">
-            <div class="col-12 col-lg-5 itm vision">
+            <div class="col-12 col-md-5 itm vision">
                 <img src="~/portal/img/about/Vision.png" alt="@Localizer["Vision"]" class="animate delay-5ms" data-animation="bounceIn">
                 <h3 class="animate fast" data-animation="fadeInLeft">@Localizer["Vision"]</h3>
 
@@ -46,7 +46,7 @@
                     @Localizer["Vision_txt"]
                 </div>
             </div>
-            <div class="col-12 col-lg-5 itm mission">
+            <div class="col-12 col-md-5 itm mission">
                 <img src="~/portal/img/about/Mission.png" alt="@Localizer["Mission"]" class="animate delay-5ms" data-animation="bounceIn">
                 <h3 class="animate fast" data-animation="fadeInLeft">@Localizer["Mission"]</h3>
 
@@ -76,14 +76,14 @@
                     <p>@Localizer["customer_satisfaction_txt"]</p>
                 </article>
             </div>
-            <div class="col col-lg-6 animate fast delay-2ms" data-animation="fadeInUp">
+            <div class="col-12 col-md-6 col-lg-6 animate fast delay-2ms" data-animation="fadeInUp">
                 <article class="mt">
                     <img src="~/Portal/img/icons/Honesty.png" alt="@Localizer["Honesty"]" />
                     <h5><span>@Localizer["Honesty"]</span></h5>
                     <p>@Localizer["honesty_txt"]</p>
                 </article>
             </div>
-            <div class="col col-lg-6 animate fast delay-2ms" data-animation="fadeInUp">
+            <div class="col-12 col-md-6 col-lg-6 animate fast delay-2ms" data-animation="fadeInUp">
                 <article class="mt">
                     <img src="~/Portal/img/icons/quality.png" alt="@Localizer["Quality"]" />
                     <h5><span>@Localizer["Quality"]</span></h5>
@@ -107,7 +107,7 @@
                     <h3 class="__title"><span>@Localizer["Elements_of_Excellence"]</span></h3>
                 </header>
 
-                <div class="col col-lg-4">
+                <div class="col-12 col-md-12 col-lg-4">
                     <article class="animate fast delay-2ms"  data-animation="fadeIn">
                         <img src="~/Portal/img/icons/work.png" alt="@Localizer["Quality_of_work"]" />
                         <h6>@Localizer["Quality_of_work"]</h6>
@@ -115,7 +115,7 @@
                     </article>
                 </div>
 
-                <div class="col col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="animate fast delay-2ms"  data-animation="fadeIn">
                         <img src="~/Portal/img/icons/quickness.png" alt="@Localizer["Quickness_of_performance"]" />
                         <h6>@Localizer["Quickness_of_performance"]</h6>
@@ -123,7 +123,7 @@
                     </article>
                 </div>
 
-                <div class="col col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <article class="animate fast delay-2ms"  data-animation="fadeIn">
                         <img src="~/Portal/img/icons/service.png" alt="@Localizer["After_implementation_services"]" />
                         <h6>@Localizer["After_implementation_services"]</h6>
@@ -136,6 +136,49 @@
     </section>
 
 
+
+<section class="section-fields">
+    <div class="divider-75 d-none d-md-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5 hd">
+                    <h3 class="__title"><span>@Localizer["fields_Competence"]</span></h3>
+                     <div class="divider-50 d-none d-md-block"></div>
+                </div>
+
+            <div class=" col-md-12 col-lg-4 ">
+                    <article class="animate fast" data-animation="fadeIn">
+                        <img src="~/Portal/img/icons/interior-design.png" alt="@Localizer["interior_designs"]">
+                        <h5>@Localizer["interior_designs"]</h5>
+                        <p>
+                            @Localizer["interior_designs_text"]
+                        </p>
+                    </article>
+            </div>
+
+             <div class="col-md-6 col-lg-4 ">
+                    <article class="animate fast" data-animation="fadeIn">
+                        <img src="~/Portal/img/icons/greek-column.png" alt="@Localizer["decoration_manufacturing"]">
+                        <h5>@Localizer["decoration_manufacturing"]</h5>
+                        <p>
+                            @Localizer["decoration_manufacturing_text"]
+                        </p>
+                    </article>
+            </div>
+
+             <div class="col-md-6 col-lg-4 ">
+                    <article class="animate fast" data-animation="fadeIn">
+                          <img src="~/Portal/img/icons/window.png" alt="@Localizer["business_furniture"]">
+                        <h5>@Localizer["business_furniture"]</h5>
+                        <p>
+                            @Localizer["business_furniture_text"]
+                        </p>
+                    </article>
+            </div>
+        </div>
+    </div>
+     <div class="divider-70 d-none d-md-block"></div>
+</section>
 
 
     <section class="section-methodology">
@@ -188,10 +231,10 @@
 
  
 
-<if include-if="ViewBag.publicClientsSlider != null">
+@*<if include-if="ViewBag.publicClientsSlider != null">
      
     <partial name="~/Areas/Portal/Views/Home/partials/aboutus/_clients.cshtml" model="@ViewBag.publicClientsSlider" />
-</if>
+</if>*@
 
 
 

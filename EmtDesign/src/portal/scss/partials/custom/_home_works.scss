@@ -63,16 +63,16 @@
     }
 
     .work-item{
-        margin-bottom: 35px;
+        margin-bottom: 75px;
         h6{
             margin-top: 25px;
            @include media-breakpoint-up(md){
-                @include ellipse(24px , 1.4 ,2);
+                @include max-ellipse(24px , 1.4 ,2);
            }
         }
         p{
             @include media-breakpoint-up(md){
-                @include ellipse(16px , 1.4 ,2);
+                @include max-ellipse(16px , 1.4 ,2);
            }
           
         }

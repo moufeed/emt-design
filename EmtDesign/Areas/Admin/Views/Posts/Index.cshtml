@@ -49,8 +49,10 @@
                             @foreach (var item in Model)
                             {
 
-                                <tr id="tr-@item.Id">
-                                    <td class="text-center">
+                            <tr id="tr-@item.Id">
+                                <td class="text-center">
+
+                                    <div class="tabel-img-circle">
                                         @if (!string.IsNullOrEmpty(item.MainImage))
                                         {
 
@@ -58,111 +60,115 @@
                                         }
                                         else
                                         {
-                                            <img src="~/Admin/img/noimage.jpg" alt="" width="60" />
+                                            <img src="~/Admin/img/noimage.jpg" alt="" width="75" />
                                         }
-                                    </td>
-                                    <td style="min-width:150px">
-                                        @item.Title
-                                    </td>
-                                    <td style="min-width:150px">
-                                        @item.Section
-                                    </td>
-                                    <td>
-                                        <div class="s-summary">
-                                            @{
-                                                string text = "";
-                                                if (!string.IsNullOrWhiteSpace(item.Summary))
-                                                {
-                                                    text = Regex.Replace(item.Summary, "<.*?>", String.Empty);
-                                                }
+                                    </div>
+
+                                </td>
+
+                                 
+                                <td style="min-width:150px">
+                                    <a href="@Url.AdminUrl("Edit" ,"Posts",new { id = item.Id })" class="ser-title underline">@item.Title</a>
+                                </td>
+                                <td style="min-width:150px">
+                                    @item.Section
+                                </td>
+                                <td>
+                                    <div class="s-summary">
+                                        @{
+                                            string text = "";
+                                            if (!string.IsNullOrWhiteSpace(item.Summary))
+                                            {
+                                                text = Regex.Replace(item.Summary, "<.*?>", String.Empty);
                                             }
-                                            @Html.Raw(text)
-                                        </div>
-                                    </td>
+                                        }
+                                        @Html.Raw(text)
+                                    </div>
+                                </td>
 
-                                    <td class="text-center">
+                                <td class="text-center">
 
 
-                                        @if (item.Locked)
+                                    @if (item.Locked)
+                                    {
+                                        <if include-if="item.Published">
+                                            <span class="label label-success">
+                                                <i class="fa fa-eye "></i>
+                                                @Localizer["t_published"]
+                                            </span>
+                                        </if>
+                                        <if exclude-if="item.Published">
+                                            <span class="label label-danger">
+                                                <i class="fa fa-eye-slash "></i>
+                                                @Localizer["t_unpublished"]
+                                            </span>
+                                        </if>
+                                    }
+                                    else
+                                    {
+                                        @if (item.Published)
                                         {
-                                             <if include-if="item.Published">
-                                                <span class="label label-success">
-                                                    <i class="fa fa-eye "></i>
-                                                    @Localizer["t_published"]
-                                                </span>
-                                            </if>
-                                            <if exclude-if="item.Published">
-                                                <span class="label label-danger">
-                                                    <i class="fa fa-eye-slash "></i>
-                                                    @Localizer["t_unpublished"]
-                                                </span>
-                                            </if>
+                                            <a data-toggle="tooltip"
+                                               data-placement="top"
+                                               data-status="true"
+                                               data-url="@Url.AdminUrl("PublishAsync","Posts" , new { id = item.Id})"
+                                               title="@Localizer["t_unpublish"]"
+                                               data-unpublished="@Localizer["t_unpublished"]"
+                                               data-published="@Localizer["t_published"]"
+                                               class="btn btn-link-pup published ut-published toggle_publish">
+                                                <i class="fa fa-eye c-green"></i>
+                                                <small>@Localizer["t_published"]</small>
+                                            </a>
                                         }
                                         else
                                         {
-                                            @if (item.Published)
-                                            {
-                                                <a data-toggle="tooltip"
-                                                   data-placement="top"
-                                                   data-status="true"
-                                                   data-url="@Url.AdminUrl("PublishAsync","Posts" , new { id = item.Id})"
-                                                   title="@Localizer["t_unpublish"]"
-                                                   data-unpublished="@Localizer["t_unpublished"]"
-                                                   data-published="@Localizer["t_published"]"
-                                                   class="btn btn-link-pup published ut-published toggle_publish">
-                                                    <i class="fa fa-eye c-green"></i>
-                                                    <small>@Localizer["t_published"]</small>
-                                                </a>
-                                            }
-                                            else
-                                            {
-                                                <a data-toggle="tooltip"
-                                                   data-placement="top"
-                                                   data-url="@Url.AdminUrl("PublishAsync","Posts" , new { id = item.Id})"
-                                                   title="@Localizer["t_publish"]"
-                                                   data-unpublished="@Localizer["t_unpublished"]"
-                                                   data-published="@Localizer["t_published"]"
-                                                   class="btn btn-link-pup unpublished ut-unpublished toggle_publish">
-                                                    <i class="fa fa-eye-slash c-red"></i>
-                                                    <small>@Localizer["t_unpublished"]</small>
-                                                </a>
-                                            }
+                                            <a data-toggle="tooltip"
+                                               data-placement="top"
+                                               data-url="@Url.AdminUrl("PublishAsync","Posts" , new { id = item.Id})"
+                                               title="@Localizer["t_publish"]"
+                                               data-unpublished="@Localizer["t_unpublished"]"
+                                               data-published="@Localizer["t_published"]"
+                                               class="btn btn-link-pup unpublished ut-unpublished toggle_publish">
+                                                <i class="fa fa-eye-slash c-red"></i>
+                                                <small>@Localizer["t_unpublished"]</small>
+                                            </a>
                                         }
-                                    </td>
-                                    <td>
-                                        <div>
+                                    }
+                                </td>
+                                <td>
+                                    <div>
+                                        <a data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="@Localizer["t_details"]"
+                                           href="@Url.AdminUrl("Details","Posts",new { id = item.Id })"
+                                           class="btn btn-view btn-round ut-detail-btn"><i class="fa fa-info "></i></a>
+
+                                        <a data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="@Localizer["t_edit"]"
+                                           href="@Url.AdminUrl("Edit" ,"Posts",new { id = item.Id })"
+                                           class="btn btn-edit btn-round ut-edit-btn"><i class="fa fa-edit "></i></a>
+
+                                        <if include-if="item.Locked">
+                                            <span data-toggle="tooltip"
+                                                  data-placement="top"
+                                                  class="btn-locked btn-round"
+                                                  title="@Localizer["locked_by_system"]"><i class="fa fa-lock"></i></span>
+                                        </if>
+
+                                        <if exclude-if="item.Locked">
                                             <a data-toggle="tooltip"
                                                data-placement="top"
-                                               title="@Localizer["t_details"]"
-                                               href="@Url.AdminUrl("Details","Posts",new { id = item.Id })"
-                                               class="btn btn-view btn-round ut-detail-btn"><i class="fa fa-info "></i></a>
+                                               data-id="@item.Id"
+                                               data-url="@Url.AdminUrl("DeleteAsync", "Posts", new { id = item.Id })"
+                                               title="@Localizer["t_remove"]"
+                                               class="btn btn-remove btn-round delete-post ut-remove-btn"><i class="fa fa-times "></i></a>
+                                        </if>
 
-                                            <a data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="@Localizer["t_edit"]"
-                                               href="@Url.AdminUrl("Edit" ,"Posts",new { id = item.Id })"
-                                               class="btn btn-edit btn-round ut-edit-btn"><i class="fa fa-edit "></i></a>
+                                    </div>
 
-                                            <if include-if="item.Locked">
-                                                <span data-toggle="tooltip"
-                                                      data-placement="top"
-                                                      class="btn-locked btn-round"
-                                                      title="@Localizer["locked_by_system"]"><i class="fa fa-lock"></i></span>
-                                            </if>
-
-                                            <if exclude-if="item.Locked">
-                                                <a data-toggle="tooltip"
-                                                   data-placement="top"
-                                                   data-id="@item.Id"
-                                                   data-url="@Url.AdminUrl("DeleteAsync", "Posts", new { id = item.Id })"
-                                                   title="@Localizer["t_remove"]"
-                                                   class="btn btn-remove btn-round delete-post ut-remove-btn"><i class="fa fa-times "></i></a>
-                                            </if>
-
-                                        </div>
-
-                                    </td>
-                                </tr>
+                                </td>
+                            </tr>
 
                             }
                             
