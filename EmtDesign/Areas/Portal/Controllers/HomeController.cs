@@ -78,7 +78,7 @@ namespace EmtDesign.Areas.Portal.Controllers
                 //ViewBag.Posts = await _postservice.GetPublicListAsync(4);
                 var lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
 
-                ViewBag.works = await _GalleriesService.GetPublicListAsync(12,(lang == "ar") ? _localizer[GallerySections.projects.ToString()] :  GallerySections.works.ToString());
+                ViewBag.works = await _GalleriesService.GetPublicListAsync(12,(lang == "ar") ? _localizer[GallerySections.projects.ToString()] :  GallerySections.projects.ToString());
                //ViewBag.projects = await _GalleriesService.GetPublicListAsync(4, GallerySections.projects.ToString());
 
                 var aboutSummary = await _pageService.GetPublicPageSummaryByIdAsync(_appSettingsService.GetHomePageSummuryId());
