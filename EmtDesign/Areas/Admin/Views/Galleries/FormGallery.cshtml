@@ -171,7 +171,7 @@
                         </div>
                     </div>
 
-                     
+
                     <div class="form-group clearfix">
                         <label asp-for="Section" class="control-label col-md-3 col-sm-3 col-xs-12 ">@Localizer["f_section"]</label>
                         <div class="col-md-7 col-sm-9 col-xs-12">
@@ -231,7 +231,7 @@
                         <input type="hidden" name="DateModified" value="@(String.Format("{0:yyyy-MM-dd}", (Model.ModifiedDate != null ) ? Model.ModifiedDate  : Model.CreatedDate  ))" data-seo-modified />
 
 
-                        @await Html.PartialAsync("~/Areas/admin/Views/Shared/Seo/_SeoFields.cshtml", Model.SEOMarkup);
+                        @await Html.PartialAsync("~/Areas/Admin/Views/Shared/Seo/_SeoFields.cshtml", Model.SEOMarkup);
 
                     }
 
@@ -305,7 +305,7 @@
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 
     <script src="~/Admin/js/validator.min.js"></script>
- 
+
     <script src="~/Admin/js/galleries.min.js"></script>
 
     @{
@@ -327,7 +327,7 @@
             $('#publish-gallery').on('change', function () {
 
                 var $this = $(this);
-               
+
                 var msg = ($this.prop('checked')) ? "@Localizer["published_successfully"]" : "@Localizer["unpublished_successfully"]";
                 var url = $this.data('url');
                 $.get(url, function () { }).done(function (data) {
@@ -344,7 +344,7 @@
                 })
                 .fail(function (jqXHR, Status) {
                     $notification.error(errorTitle, jqXHR.statusText, 2000, "fa fa-exclamation-circle");
-                    
+
                 }); })
 
         </script>
@@ -369,5 +369,3 @@
     }
 
 }
-
-

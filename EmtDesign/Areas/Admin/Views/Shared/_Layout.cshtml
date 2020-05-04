@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name='url' content='https://localhost:44365' id="rootUrl">
-    <link rel='fluid-icon' type='image/jpg' href='https://localhost:44365/portal/img/seoLogo.jpg' id="rootLogo">
+    <link rel='fluid-icon' type='image/jpg' href='https://localhost:44365/Portal/img/seoLogo.jpg' id="rootLogo">
 
     <title>@ViewData["Title"] - @Localizer["AdminPanelWeb"]</title>
 
@@ -51,7 +51,7 @@
         }
 
 
- 
+
         <link rel="stylesheet" href="~/Admin/css/@styleFile" />
 
 
@@ -118,25 +118,25 @@
 
 
 
-    
+
 
     <partial name="~/Areas/Admin/Views/Shared/utilities/_localization.cshtml" />
 
     @RenderSection("Localization", required: false)
-      
+
        <script src="~/Admin/lib/jquery/dist/jquery.min.js">
     </script>
     <script src="~/Admin/lib/bootstrap/dist/js/bootstrap.min.js">
     </script>
     <script src="~/Admin/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
-  
+
     <script src="~/Admin/js/script.min.js"></script>
 
     @RenderSection("Scripts", required: false)
 
     <partial name="~/Areas/Admin/Views/Shared/utilities/_ResultMessage_notification.cshtml" model="ViewData"/>
 
-   
+
     <script>
         $.ajaxSetup({
             error: function (x, status, error) {

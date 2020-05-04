@@ -1,14 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Products";
     Layout = "_Layout";
-    ViewData["ImageURl"] = @Url.Content("~/portal/img/search.jpg");
+    ViewData["ImageURl"] = @Url.Content("~/Portal/img/search.jpg");
     ViewData["pageTitle"] = "Search";
 }
 
 @await Html.PartialAsync("~/Areas/Portal/Views/Shared/partials/_PageHeader.cshtml", @ViewData)
 
 
- 
+
 
 <section class="search-results">
    <div class="container">
@@ -16,7 +16,7 @@
        <div class="row justify-content-center">
            <div class="col-md-10">
             <div class="search_keyword">
-                 <p> Search Results for:  <strong> keyword</strong> </p> 
+                 <p> Search Results for:  <strong> keyword</strong> </p>
             </div>
            </div>
        </div>
@@ -42,7 +42,7 @@
                                             <path d="M312.065,157.073c-8.611-22.412-23.604-41.574-43.36-55.413C248.479,87.49,224.721,80,200,80c-5.522,0-10,4.478-10,10
                                             c0,5.522,4.478,10,10,10c41.099,0,78.631,25.818,93.396,64.247c1.528,3.976,5.317,6.416,9.337,6.416
                                             c1.192,0,2.405-0.215,3.584-0.668C311.472,168.014,314.046,162.229,312.065,157.073z"/>
-                                            
+
                                 </svg>
                                 <div class="n-text">
                                     <strong>OOPS!</strong>
@@ -57,7 +57,7 @@
        @for(var i=0; i< 15; i++){
             <div class="d-flex result-item  align-items-start">
                  <a href="#" class="result-image">
-                    <img src="~/portal/img/no-image.svg"  class="img-fluid" alt="">
+                    <img src="~/Portal/img/no-image.svg"  class="img-fluid" alt="">
                 </a>
                 <div class="result-info">
                      <div class="result-meta">
@@ -67,19 +67,19 @@
                         </span>
                     </div>
                     <h5><a href="#"> Lorem ipsum dolor sit amet.</a></h5>
-                   
+
                      <div class="result-text">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum pariatur, voluptate possimus iure incidunt!  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum pariatur, voluptate possimus iure incidunt!
                         </p>
-                    </div> 
+                    </div>
                 </div>
             </div>
        }
        </div>
 
-     
-     
+
+
         </div>
 
             <div class="row justify-content-center  pagination-row mt-4">
@@ -92,10 +92,10 @@
                         <button class="pull-right flip-dir btn btn-outline-secondary next">
                                 Next
                                 <i class="fa fa-angle-right"></i>
-                        </button> 
+                        </button>
                     </div>
                 </div>
             </div>
-           
+
    </div>
 </section>

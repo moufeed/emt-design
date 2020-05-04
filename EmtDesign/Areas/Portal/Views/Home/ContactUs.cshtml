@@ -7,9 +7,9 @@
     ViewData["pageTitle"] = Localizer["contact_us"];
 }
 
- 
+
 <partial name="~/Areas/Portal/Views/Shared/partials/_PageHeader.cshtml" />
- 
+
 <section class="ls s-pt-30 s-pb-100 s-pt-md-100 s-pb-md-130  s-py-lg-100 contact2">
     <div class="divider-15 d-none d-xl-block"></div>
     <div class="container">
@@ -20,19 +20,19 @@
                 <div class="row no-gutters">
                     <div class="col-md-6 col-sm-12">
                         <div class=" animate" data-animation="fadeIn">
-                            
+
                             <h6>
                                 @Localizer["call_us"]
                             </h6>
                             <p class="teaser-content">
                                 <span>
-                                   
+
                                     <span class="number" dir="ltr">@Localizer["mobile_number"]</span>
                                 </span>
                             </p>
                         </div>
                         <div class="mt-3 animate" data-animation="fadeIn">
-                            
+
                             <h6>
                                 @Localizer["Write_Us"]
                             </h6>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <div class="  animate" data-animation="fadeIn">
-                            
+
                             <h6>
                                 @Localizer["visit_us"]
                             </h6>
@@ -54,8 +54,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
             </div>
             <div class="col-md-3 col-sm-4">
@@ -66,9 +66,9 @@
 
             @*
 
-       
-       
-        
+
+
+
 
             *@
         </div>
@@ -140,7 +140,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group text-center">
-                                <button type="submit" id="contact_form_submit" name="contact_submit" 
+                                <button type="submit" id="contact_form_submit" name="contact_submit"
                                         class="btn btn-maincolor btnsend">
                                     <span>@Localizer["p_send_message"]</span>
                                     <div class="lds-spinner d-none">
@@ -171,7 +171,7 @@
     {
     "@@context":"http://schema.org",
     "@@type":"LocalBusiness",
-    "image":"@ViewBag.Host/portal/img/logo.png",
+    "image":"@ViewBag.Host/Portal/img/logo.png",
     "name":"@Localizer["excellence_miles"]",
     "address":{
     "@@type":"PostalAddress",
@@ -192,8 +192,8 @@
 
 }
 
-  
- 
+
+
 @section footer {
 <script src="~/Portal/js/contact.min.js"></script>
 
@@ -224,7 +224,7 @@
     <div class="modal fade modal-contact" id="ContactModel" tabindex="-1" role="dialog" aria-labelledby="ContactModelLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                
+
                 <div class="modal-body p-5">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
