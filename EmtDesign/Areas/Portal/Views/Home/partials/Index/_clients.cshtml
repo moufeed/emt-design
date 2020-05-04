@@ -12,7 +12,7 @@
                 </header>
                 <div class="col-12 animate fast delay-5ms" data-animation="fadeIn">
                     <div class="owl-carousel"
-                         data-responsive-lg="4"
+                         data-responsive-lg="5"
                          data-responsive-md="3"
                          data-responsive-sm="2"
                          data-responsive-xs="1"
@@ -20,7 +20,8 @@
                          data-dots="false"
                          data-loop="true"
                          data-margin="15"
-                         data-autoplayTimeout="1000"
+                         data-slideBy = "5" 
+                         data-autoplayTimeout="4000"
                          dir="ltr">
                         @foreach (TamTechSDK.Common.Services.ContentService.Sliders.Models.SliderItemDto item in Model.Items)
                         {

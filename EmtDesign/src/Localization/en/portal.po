@@ -13,10 +13,10 @@ msgid "about_company"
 msgstr "About Company"
 
 msgid "latest_services"
-msgstr "Some Services"
+msgstr "Services"
 
 msgid "latest_services_slogan"
-msgstr "We deliver the best quality service for the realization of each client’s marketing needs."
+msgstr "We deliver the best quality service for the realization of each client’s needs."
 
 msgid "Latest_work"
 msgstr "Some works"
@@ -266,3 +266,16 @@ msgstr "Business furniture, upholstery and curtains"
 
 msgid "business_furniture_text"
 msgstr "Furnishing is the finishing touch to add the aesthetic spirit of the work so we rely on sophisticated  technological factory and modern equipment as well as upholstery workshops"
+
+
+msgid "request_title"
+msgstr "Request a quote"
+
+msgid "request_msg"
+msgstr "We are happy to receive your requests"
+
+msgid "p_description"
+msgstr "Description"
+
+msgid "request_btn"
+msgstr "Request"

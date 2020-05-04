@@ -1,7 +1,12 @@
+.quick-contact{
+    padding-top : rem(75px);
+    background: darken(#ffffff,5%);
+}
+
 .btn-group.btn-links{
     > a.btn{
         min-width: 0;
-        border: 2px solid;
+        border: 2px solid; 
        padding:  21px 30px;
         &:first-child{
             border-top-#{$right}-radius: 0;

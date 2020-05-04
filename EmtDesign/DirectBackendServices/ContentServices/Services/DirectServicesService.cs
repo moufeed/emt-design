@@ -92,22 +92,16 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
         }
 
 
-        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListBySectionAsync(string section = "")
+
+
+        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListBySectionAsync(string section = "", bool sortManually = false)
         {
-            var services = await _servicesService.GetPublicListAsync(section);
+            var services = await _servicesService.GetPublicListAsync(section, sortManually);
             List<ServiceDto> servicesDto = services?.Select(m => m.MapToFrontendDto()).ToList();
             return GetRequestProviderResult(servicesDto);
         }
 
-
-        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync(string slug = "")
-        {
-            var services = await _servicesService.GetPublicListAsync(slug);
-            List<ServiceDto> servicesDto = services?.Select(m => m.MapToFrontendDto()).ToList();
-            return GetRequestProviderResult(servicesDto);
-        }
-
-        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync()
+        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync(bool sortManually = false)
         {
             //// TODO: Not optimized
             //dynamic result = await _servicesService.GetPublicDynamicListAsync();
@@ -117,13 +111,13 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
             //    ServicesList = DeserializeFromObject<List<ServiceDto>>(result);
             //}
             //return GetRequestProviderResult(ServicesList);
-            var services = await _servicesService.GetPublicListAsync();
+            var services = await _servicesService.GetPublicListAsync(null, sortManually);
             List<ServiceDto> servicesDto = services?.Select(m => m.MapToFrontendDto()).ToList();
             return GetRequestProviderResult(servicesDto);
         }
 
 
-        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync(int takeItems)
+        public async Task<IRequestProviderResult<List<ServiceDto>>> GetPublicListAsync(int takeItems, bool sortManually = false)
         {
             //// TODO: Not optimized
             //dynamic result = await _servicesService.GetPublicDynamicListAsync(takeItems);
@@ -134,7 +128,7 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
             //}
             //return GetRequestProviderResult(ServicesList); 
 
-            var services = await _servicesService.GetPublicListAsync(takeItems);
+            var services = await _servicesService.GetPublicListAsync(takeItems, sortManually);
             List<ServiceDto> servicesDto = services != null ? services.Select(m => m.MapToFrontendDto()).ToList() : new List<ServiceDto>();
             return GetRequestProviderResult(servicesDto);
         }
@@ -191,11 +185,6 @@ namespace EmtDesign.DirectBackendServices.ContentServices.Services
             var result = await _servicesService.PublishAsync(data.MapToBackend());
             return MapRequestProviderResult(result);
         }
-
-       
-
-
-
 
 
 

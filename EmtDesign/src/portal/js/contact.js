@@ -13,8 +13,11 @@ jQuery.validator.setDefaults({
     }
 });
 
-if($('#contact_form').length){
-    $('#contact_form').validate( 
+ 
+
+
+if( $('#request_form').length ){
+    $('#request_form').validate( 
         {
              
             rules: { 
@@ -70,6 +73,32 @@ if($('#contact_form').length){
     
                     return false;
             },
+        }
+    );
+} 
+
+
+if($('#contact_form').length ){
+    $('#contact_form').validate( 
+        {
+             
+            rules: { 
+                Name: {
+                    required: true,
+                    minlength: 2
+                },
+               
+                Email:{
+                    required: true, 
+                    email: true
+                },
+                Message: {
+                    required: true, 
+                    minlength: 4
+                },
+            },
+           
+       
         }
     );
 } 

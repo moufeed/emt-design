@@ -20,6 +20,10 @@ using TamTechSDK.Common.Services.Identity.Models.Params;
 using TamTechSDK.Web.Models.Admin.User;
 using TamTechSDK.Web.Routing;
 using TamTechSDK.Web.Services.Configurations.Cultures;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.ResponseCompression;
+using System.Linq;
+using System.IO.Compression;
 
 namespace EmtDesign
 {
@@ -41,7 +45,36 @@ namespace EmtDesign
 
 
             services.AddMvcConfigurations();
+            services.Configure<GzipCompressionProviderOptions>(option =>
+            {
+                option.Level = CompressionLevel.Fastest;
+            });
 
+            services.AddResponseCompression(options =>
+            {
+                //options.Providers.Add<BrotliCompressionProvider>();
+
+                options.EnableForHttps = true;
+                options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[]
+                {
+                    "application/xml",
+                    "text/xml",
+                    "application/json",
+                    "text/json",
+                    "image/svg+xml",
+                    "application/font-woff2",
+                    "application/x-font-ttf",
+                    "font/ttf",
+                    "font/eot",
+                    "font/otf",
+                    "font/opentype"
+                });
+
+
+                //options.Providers.Add<BrotliCompressionProvider>();
+                options.Providers.Add<GzipCompressionProvider>();
+
+            });
             services.AddFiltersConfigurations();
 
             services.AddAuthenticationServicesConfigurations(Configuration);
@@ -95,6 +128,15 @@ namespace EmtDesign
             app.UseStaticFiles();
             //app.UseCookiePolicy();
 
+            var cachePeriod = env.IsDevelopment() ? "600" : "86400";
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                OnPrepareResponse = ctx =>
+                {
+                    ctx.Context.Response.Headers.Append("Cache-Control", $"public, max-age={cachePeriod}");
+                }
+            });
+            app.UseResponseCompression();
             app.UseStatusCodePagesWithRedirects("/error/{0}");
 
             app.InitializeMapper();

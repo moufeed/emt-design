@@ -13,13 +13,13 @@ msgid "about_company"
 msgstr "حول الشركة"
 
 msgid "latest_services"
-msgstr "من خدماتنا"
+msgstr "خدماتنا"
 
 msgid "latest_services_slogan"
-msgstr "نحن نقدم أفضل الخدمات من أجل تحقيق احتياجات التسويق لكل عميل."
+msgstr "نحن نقدم أفضل الخدمات من أجل تحقيق احتياجات العميل."
 
 msgid "Latest_work"
-msgstr "من أعمالنا"
+msgstr "أعمالنا"
 
 msgid "Latest_work_slogan"
 msgstr "نحن نتعامل بصدق مع الجميع لأننا نؤمن بشدة بأن الالتزام بوعودنا هو مفتاح النجاح."
@@ -263,5 +263,14 @@ msgstr "أعمال التأثيث والتنجيد والستائر"
 msgid "business_furniture_text"
 msgstr " التأثيث هو اللمسة النهائية لإضافة الروح الجمالية للعمل نعتمد بذلك على مصنع متطور بتكنلوجيا ومعدات تصنيع حديثة و ورشات تنجيد متميزة."
 
-msgid ""
-msgstr ""
+msgid "request_title"
+msgstr "طلب سعر"
+
+msgid "request_msg"
+msgstr "نحن سعداء باستقبال طلباتكم"
+
+msgid "p_description"
+msgstr "الوصف"
+
+msgid "request_btn"
+msgstr "طلب"

@@ -1628,10 +1628,10 @@ msgid "about_company"
 msgstr "About Company"
 
 msgid "latest_services"
-msgstr "Some Services"
+msgstr "Services"
 
 msgid "latest_services_slogan"
-msgstr "We deliver the best quality service for the realization of each client’s marketing needs."
+msgstr "We deliver the best quality service for the realization of each client’s needs."
 
 msgid "Latest_work"
 msgstr "Some works"
@@ -1883,6 +1883,19 @@ msgid "business_furniture_text"
 msgstr "Furnishing is the finishing touch to add the aesthetic spirit of the work so we rely on sophisticated  technological factory and modern equipment as well as upholstery workshops"
 
 
+msgid "request_title"
+msgstr "Request a quote"
+
+msgid "request_msg"
+msgstr "We are happy to receive your requests"
+
+msgid "p_description"
+msgstr "Description"
+
+msgid "request_btn"
+msgstr "Request"
+
+
 #seo 
 msgid "excellence_miles"
 msgstr "Excellence Miles"
@@ -1899,13 +1912,13 @@ msgid "telephone_number"
 msgstr "+966 11 281 7030"
  
 msgid "mobile_number"
-msgstr "+966 55 164 9005"
+msgstr "+966553375031"
 
 msgid "fax_number"
 msgstr "+966 11 281 7050"
 
 msgid "info_email"
-msgstr "info@emt-events.com"
+msgstr "info@emt-design.com"
 
 msgid "latitude"
 msgstr "24.6780230"
@@ -1942,14 +1955,14 @@ msgstr "~/portal/img/backgrounds/pages.jpg"
 
 
 msgid "facebook_link"
-msgstr "https://www.facebook.com/Excellence-miles-Events-1174398756040626/"
-
-msgid "twitter_link"
-msgstr "https://twitter.com/amyal_career"
+msgstr "https://www.facebook.com/excellencemiles"
 
 msgid "instagram_link"
-msgstr "https://www.instagram.com/excellence_miles_events_/?hl=en"
+msgstr "https://www.instagram.com/excellencemiles"
 
+msgid "twitter_link"
+msgstr ""
+ 
 msgid "youtube_link"
 msgstr "https://www.youtube.com/channel/UCsCA7gJjzyj8uBlJsH3nVFw"
 
@@ -1957,7 +1970,7 @@ msgid "linkedin_link"
 msgstr ""
 
 msgid "snapchat_link"
-msgstr "https://www.snapchat.com/add/excellence_miles_events_"
+msgstr ""
 
 msgid ""
 msgstr ""

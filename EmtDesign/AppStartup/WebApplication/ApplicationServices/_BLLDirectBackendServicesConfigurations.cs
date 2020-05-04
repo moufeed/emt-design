@@ -41,7 +41,10 @@ namespace EmtDesign.AppStartup.WebApplication.ApplicationServices
             services.AddTransient<TamTechSDK.Common.Services.ContentService.Request.IRequestService, EmtDesign.DirectBackendServices.ContentServices.Request.DirectRequestService>();
             services.AddTransient<TamTechSDK.Common.Services.ContentService.Status.IStatusService, EmtDesign.DirectBackendServices.ContentServices.Status.DirectSatusService>();
             services.AddTransient<TamTechSDK.Common.Services.ContentService.City.ICityService, EmtDesign.DirectBackendServices.ContentServices.City.DirectCityService>();
-            #endregion
+            services.AddTransient<TamTechSDK.Common.Services.ContentService.Testimonials.ITestimonialsServices, EmtDesign.DirectBackendServices.ContentServices.Testimonials.DirectTestimonialsServices>();
+            
+            
+            #endregion 
 
             #region Upload Service 
 

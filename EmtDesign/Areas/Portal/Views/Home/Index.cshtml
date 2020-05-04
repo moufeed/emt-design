@@ -9,7 +9,7 @@
 
 <partial name="partials/Index/_slider.cshtml" />
 <partial name="partials/Index/_about.cshtml" />
-@*<partial name="partials/Index/_services.cshtml" />*@
+<partial name="partials/Index/_services.cshtml" />
 <partial name="partials/Index/_works.cshtml" />
 @*<partial name="partials/Index/_events.cshtml" />*@
 @*<partial name="partials/Index/_projects.cshtml" />*@
@@ -18,6 +18,7 @@
 <if include-if="ViewBag.publicClientsSlider != null">
     <partial name="partials/Index/_clients.cshtml" model="@ViewBag.publicClientsSlider" />
 </if>
+<partial name="partials/Index/_contact.cshtml" />
 <partial name="partials/Index/_contactFooter.cshtml" />
 
 
@@ -37,9 +38,56 @@
 }
 
 
-@section footer{
+
+
+
+
+
+@section footer {
     <script src="~/Portal/js/home.min.js"></script>
+    <script src="~/Portal/js/contact.min.js"></script>
+    @if (lang == "ar")
+    {
+        <script>
+        $.extend( $.validator.messages, {
+	    required: "هذا الحقل إلزامي",
+	    remote: "يرجى تصحيح هذا الحقل للمتابعة",
+	    email: "رجاء إدخال عنوان بريد إلكتروني صحيح",
+	    url: "رجاء إدخال عنوان موقع إلكتروني صحيح",
+	    date: "رجاء إدخال تاريخ صحيح",
+	    dateISO: "رجاء إدخال تاريخ صحيح (ISO)",
+	    number: "رجاء إدخال عدد بطريقة صحيحة",
+	    digits: "رجاء إدخال أرقام فقط",
+	    creditcard: "رجاء إدخال رقم بطاقة ائتمان صحيح",
+	    equalTo: "رجاء إدخال نفس القيمة",
+	    extension: "رجاء إدخال ملف بامتداد موافق عليه",
+	    maxlength: $.validator.format( "الحد الأقصى لعدد الحروف هو {0}" ),
+	    minlength: $.validator.format( "الحد الأدنى لعدد الحروف هو {0}" ),
+	    rangelength: $.validator.format( "عدد الحروف يجب أن يكون بين {0} و {1}" ),
+	    range: $.validator.format( "رجاء إدخال عدد قيمته بين {0} و {1}" ),
+	    max: $.validator.format( "رجاء إدخال عدد أقل من أو يساوي {0}" ),
+	    min: $.validator.format( "رجاء إدخال عدد أكبر من أو يساوي {0}" )
+} );
+        </script>
+    }
+    <div class="modal fade modal-contact" id="ContactModel" tabindex="-1" role="dialog" aria-labelledby="ContactModelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body p-5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <p> @Localizer["dear_customer"] </p>
+                    <p>@Localizer["We_have_received_your_message"]</p>
+                    <p>
+                        @Localizer["mobile_no"]. <span dir="ltr" style="font-family:tahoma">@Localizer["mobile_number"]</span>
+                    </p>
+                    <small>@Localizer["have_great_day"]</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
 }
-
-
- 

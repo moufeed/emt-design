@@ -17,8 +17,10 @@ using TamTechSDK.Common.Services.ContentService.Posts.Models;
 using TamTechSDK.Common.Services.ContentService.Request;
 using TamTechSDK.Common.Services.ContentService.Services;
 using TamTechSDK.Common.Services.ContentService.Sliders;
-
+using TamTechSDK.Common.Services.ContentService.Testimonials;
 using TamTechSDK.Common.Services.Email;
+using TamTechSDK.Common.Services.Email.Models;
+using TamTechSDK.Common.Services.Upload;
 using TamTechSDK.Web;
 using TamTechSDK.Web.Controllers.Portal;
 using TamTechSDK.Web.Services.Configurations.AppSetting;
@@ -34,8 +36,9 @@ namespace EmtDesign.Areas.Portal.Controllers
         private readonly IGalleriesService _GalleriesService;
         private readonly IPostsService _postservice;
         private readonly IServicesService _servicesservice;
+        private readonly IEmailSenderService _emailSender;
 
-        private readonly IStringLocalizer<HomeBaseController> _localizer;
+        private readonly IStringLocalizer<PublicBaseController> _localizer;
 
         public HomeController(ITelemetryClientService telemetryClientService,
                                IPageService pageService,
@@ -49,11 +52,13 @@ namespace EmtDesign.Areas.Portal.Controllers
                                ICityService cityService,
                                IGalleriesService GalleriesService,
                                IPostsService postservice,
-                               IStringLocalizer<HomeBaseController> localizer
+                               IStringLocalizer<PublicBaseController> localizer,
+                               ITestimonialsServices testimonialservices,
+                               IUploadManagerService uploadManager
                              )
                                : base(telemetryClientService, pageService,
                                         menusServices, configuration, emailSender, appSettingsService,
-                                        servicesservice, sliderService, requestService, cityService)
+                                        servicesservice, sliderService, requestService, cityService, testimonialservices, uploadManager, localizer)
 
         {
             _pageService = pageService;
@@ -62,6 +67,8 @@ namespace EmtDesign.Areas.Portal.Controllers
             _sliderService = sliderService;
             _postservice = postservice;
             _localizer = localizer;
+            _servicesservice = servicesservice;
+            _emailSender = emailSender;
         }
 
         public override async Task<IActionResult> Index()
@@ -88,12 +95,12 @@ namespace EmtDesign.Areas.Portal.Controllers
                     ViewBag.aboutSummary = aboutSummary.Data;
                 }
 
-                /*var services = await _servicesservice.GetPublicListAsync(40);
+               var services = await _servicesservice.GetPublicListAsync(4);
 
                 if (services.Success)
                 {
                     ViewBag.services = services.Data;
-                }*/
+                }
 
                 var publicClientsSlider = await _sliderService.GetPublicByKeyAsync(_appSettingsService.GetHomePageCarouselSliderKey());
                 if (publicClientsSlider.Success)
@@ -131,5 +138,49 @@ namespace EmtDesign.Areas.Portal.Controllers
 
             return await base.AboutUs();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ContactEmt(ContactUs model)
+        {
+
+
+            // ContactUs model = new ContactUs();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var emailSettings = _appSettingsService.GetEmailSettings();
+                    bool result = await _emailSender.SendAsync(new EmailModel
+                    {
+                        Email = emailSettings.From,
+                        Subject = "Contact Us",
+                        Message = $"Message from Email : {model.Email} - Mobile :{model.Mobile} - Message content is : {model.Message}",
+                        ReasonOfSend = "ContactUs"
+
+                    });
+                    if (result)
+                    {
+                        TempData["name"] = model.Name;
+                        return RedirectToAction("success");
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                TrackException(exc);
+            }
+            ViewBag.Host = _appSettingsService.GetURl();
+            return View("ContactUs");
+        }
+
+        public async Task<IActionResult> success()
+        {
+            ViewBag.Host = _appSettingsService.GetURl();
+            TempData["preson"] = TempData["name"];
+            TempData["showAlert"] = true;
+
+            return View("ContactUs");
+        }
+
     }
 }

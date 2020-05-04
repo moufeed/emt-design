@@ -114,21 +114,18 @@ $(window).on('load',function(){
 				syncedClass = (data.syncedClass) ? data.syncedClass : false,
 				hoverPause  = (data.pause) ? data.pause : true,
 				autoplayTimeout  = (data.autoplaytimeout) ? data.autoplaytimeout : 3000,
+				slideBy = (data.slideby) ? data.slideby : 1,
 				filters = data.filters ? data.filters : false;
 
 			  
  
 			$carousel.owlCarousel({
-				  
 				autoplay:autoplay,
 				autoplayTimeout: autoplayTimeout,
 				autoplayHoverPause:hoverPause,
-
 				loop: loop,
-				 
 				margin: margin,
 				nav: nav,
-				 
 				dots: dots,
 				themeClass: themeClass,
 				center: center,
@@ -136,7 +133,7 @@ $(window).on('load',function(){
 				mouseDrag: draggable,
 				touchDrag: draggable,
 				items: items,
-		 
+				slideBy : slideBy, 
 				responsive: {
 					0:{
 						items: responsiveXs
