@@ -3,7 +3,7 @@
 
  @{ 
      var lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
-     string slug = ViewContext.RouteData.Values["Slug"].ToString();
+     string slug = ViewContext.RouteData.Values["Slug"]?.ToString();
  }
 
  
