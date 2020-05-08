@@ -27,7 +27,7 @@ namespace EmtDesign.Areas.Portal.Controllers
 
 
         [ActionName("s")]
-        public virtual async Task<IActionResult> Section(PaginationModel Pagination, string slug)
+        public override async Task<IActionResult> Section(PaginationModel Pagination, string slug)
         {
 
 
